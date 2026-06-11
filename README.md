@@ -9,7 +9,7 @@ empresa de Brendo Uiles. Duas direções completas, estáticas e autocontidas �
 |---|---|
 | `index.html` | Chooser de pitch — mostra as 2 versões lado a lado (para enviar ao cliente) |
 | `v1/index.html` | **Versão 1 "A Gente Resolve!"** — bold, fiel ao Instagram (preto + dourado + vermelho, Anton/Archivo) |
-| `v2/index.html` | **Versão 2 "Vermelho de Oficina"** — cores do mascote (vermelho Milwaukee + preto + dourado), etiquetas sticker, sombras duras (Saira Condensed/Saira); hero mascot-ready |
+| `v2/index.html` | **Versão 2 "Oficina Clara"** — tema claro tipo papel de catálogo com as cores do mascote (vermelho + dourado), etiquetas sticker e sombras de impressão (Saira Condensed/Saira); hero mascot-ready |
 | `assets/obras/` | 6 fotos reais extraídas do reel do Instagram (frames hi-res) |
 | `.claude/skills/` | Skills `copywriting` + `cro` (coreyhaines31/marketingskills) usadas na copy |
 
@@ -35,10 +35,10 @@ Cada versão tem **um único ponto de edição**: o objeto `CONFIG` no `<script>
 
 ```js
 const CONFIG = {
-  whatsapp : "5500000000000",   // só dígitos: 55 + DDD + número
-  phone    : "(00) 00000-0000", // como aparece no site
+  whatsapp : "351000000000",     // só dígitos: 351 + número
+  phone    : "+351 000 000 000", // como aparece no site
   cidade   : "Sua Cidade",
-  cnpj     : "00.000.000/0001-00",
+  nif      : "000 000 000",
   instagram: "https://www.instagram.com/uiles.instalacoes.oficial/"
 };
 ```
@@ -48,7 +48,7 @@ Além do CONFIG, atualizar **no `<head>` de cada versão**:
 - `<link rel="canonical">` quando houver domínio
 
 Procurar `TODO:client` nos ficheiros para ver tudo o que falta confirmar
-(cidade, número, CNPJ, certificações tipo NR-10, depoimentos).
+(cidade, número, NIF, habilitações tipo DGEG, depoimentos).
 
 ## Assets em falta (pedir ao cliente)
 
@@ -60,6 +60,7 @@ Procurar `TODO:client` nos ficheiros para ver tudo o que falta confirmar
 
 ## Decisões de design
 
+- **Copy em português de Portugal** nas duas versões (decisão do Emanuel — "a gente"/"você"/"equipe" convertidos; NIF em vez de CNPJ, wa.me +351)
 - **Sem testemunhos inventados** — secção de prova social só entra com depoimentos reais
 - **Sem embed do Instagram** (≈1 MB de JS e quebra no browser in-app) — galeria estática + link
 - Links WhatsApp são `<a href="wa.me/...">` puros com mensagem pré-preenchida por serviço (escapam do webview do Instagram)
