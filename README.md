@@ -13,6 +13,15 @@ empresa de Brendo Uiles. Duas direções completas, estáticas e autocontidas �
 | `assets/obras/` | 6 fotos reais extraídas do reel do Instagram (frames hi-res) |
 | `.claude/skills/` | Skills `copywriting` + `cro` (coreyhaines31/marketingskills) usadas na copy |
 
+## Ver online (GitHub Pages)
+
+- **Chooser:** https://m4rqx.github.io/uiles-site/
+- **V1 Bold:** https://m4rqx.github.io/uiles-site/v1/
+- **V2 Oficina:** https://m4rqx.github.io/uiles-site/v2/
+
+Repo: https://github.com/M4RQX/uiles-site (público — Pages grátis exige repo público).
+Para atualizar: commit + push para `main`.
+
 ## Ver localmente
 
 ```bash
