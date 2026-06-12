@@ -142,6 +142,11 @@ section{padding:clamp(72px,10vw,128px) 0;position:relative}
   background:linear-gradient(transparent,rgba(0,0,0,.82));
   font-size:.84rem;font-weight:600;color:#EDE9DF;
 }
+.mascote-v1{
+  position:absolute;z-index:3;bottom:-14px;left:-34px;width:60%;height:auto;
+  filter:drop-shadow(8px 10px 18px rgba(0,0,0,.55));pointer-events:none;
+}
+.hero-visual:has(.mascote-v1) .photo-cap{text-align:right;padding-left:42%}
 
 /* ---------- ticker ---------- */
 .ticker{
@@ -342,6 +347,9 @@ footer{border-top:1px solid var(--line);padding:3.2rem 0 6.5rem;background:#0808
              onerror="this.closest('.photo-card').classList.add('ph');this.remove()">
         <figcaption class="photo-cap">Infraestrutura elétrica em obra comercial — equipa Uiles</figcaption>
       </figure>
+      <img class="mascote-v1" src="../assets/mascote.png" width="800" height="980"
+           alt="Mascote da Uiles: eletricista cartoon de boné vermelho a apontar para si"
+           onerror="this.remove()">
     </div>
   </div>
 
