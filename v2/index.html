@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Uiles Instalações Elétricas — Eletricista profissional</title>
 <meta name="description" content="Instalações elétricas residenciais, comerciais e prediais com equipa própria e ferramenta profissional. Orçamento gratuito pelo WhatsApp, resposta no próprio dia.">
-<meta name="theme-color" content="#FFFFFF">
+<meta name="theme-color" content="#0C0D0E">
 <link rel="canonical" href="https://m4rqx.github.io/uiles-site/v2/"><!-- TODO:client trocar pelo domínio definitivo -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_PT">
@@ -15,7 +15,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230B0B0D' stroke='%23F2A91E' stroke-width='4'/%3E%3Cpath d='M36 12 L22 36 L31 36 L27 52 L43 27 L33 27 Z' fill='%23F2A91E'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -32,16 +32,15 @@
 </script>
 <style>
 :root{
-  --bg:#FFFFFF; --bg-2:#F7F5F1; --card:#FFFFFF;
-  --ink:#17150F; --ink-2:#36322A; --muted:#6A645A;
-  --gold:#F2A91E; --gold-press:#E09A10; --gold-tint:#FCF1D9; --gold-text:#8F6105;
-  --dark:#17150F;
-  --line:#E8E4DC;
+  --bg:#FFFFFF; --bg-2:#F4F5F6; --card:#FFFFFF;
+  --ink:#0C0D0E; --ink-2:#2E3134; --muted:#5D6368;
+  --gold:#F2A91E; --gold-press:#DE970C; --gold-text:#8A5F00;
+  --line:#E5E7E9; --line-2:#D8DBDE;
   --f:"Archivo",sans-serif;
   --container:1150px;
   --r:10px;
-  --sh:0 1px 2px rgba(23,21,15,.05);
-  --sh-md:0 12px 28px -14px rgba(23,21,15,.18);
+  --sh:0 1px 2px rgba(12,13,14,.06);
+  --sh-md:0 14px 32px -16px rgba(12,13,14,.22);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -54,37 +53,45 @@ body{
   font-family:var(--f);font-weight:400;font-size:17px;line-height:1.65;
   -webkit-font-smoothing:antialiased;overflow-x:hidden;
 }
-::selection{background:var(--gold);color:#1A1000}
+::selection{background:var(--gold);color:#1A1200}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 :focus-visible{outline:3px solid var(--gold-press);outline-offset:3px;border-radius:4px}
 .skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:.6rem 1rem;font-weight:600;z-index:99;border-radius:6px}
 .skip:focus{left:8px}
 .wrap{max-width:var(--container);margin:0 auto;padding:0 clamp(20px,4.5vw,36px)}
-h1,h2{font-weight:800;line-height:1.12;letter-spacing:-.018em}
+h1,h2{font-weight:800;line-height:1.1;letter-spacing:-.02em}
 h3{font-weight:700;letter-spacing:-.008em}
-section{padding:clamp(64px,8.5vw,104px) 0;position:relative}
+section{padding:clamp(68px,8.5vw,108px) 0;position:relative}
 .eyebrow{
-  display:block;font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--gold-text);margin-bottom:.9rem;
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold-text);margin-bottom:1rem;
 }
+.eyebrow::before{content:"";width:26px;height:3px;background:var(--gold);border-radius:2px}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:.6rem;cursor:pointer;
   font-weight:700;font-size:.99rem;border-radius:var(--r);
-  transition:background-color .18s,border-color .18s,transform .18s ease,box-shadow .18s ease;
+  transition:background-color .18s,border-color .18s,transform .18s ease,box-shadow .18s ease,color .18s;
 }
-.btn-gold{background:var(--gold);color:#1A1200;padding:1rem 1.7rem;box-shadow:var(--sh)}
+.btn-gold{background:var(--gold);color:#1A1200;padding:1rem 1.7rem;box-shadow:0 2px 0 rgba(12,13,14,.18)}
 .btn-gold:hover{background:var(--gold-press);transform:translateY(-1px);box-shadow:var(--sh-md)}
-.btn-line{border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:.95rem 1.5rem}
-.btn-line:hover{border-color:var(--ink-2)}
-.btn-dark{background:var(--dark);color:#fff;padding:1rem 1.7rem}
-.btn-dark:hover{background:#2A261E;transform:translateY(-1px)}
+.btn-gold:active{transform:translateY(1px);box-shadow:none}
+.btn-line{border:1.5px solid var(--line-2);background:var(--card);color:var(--ink);padding:.95rem 1.5rem}
+.btn-line:hover{border-color:var(--ink)}
 .tlink{font-weight:700;color:var(--gold-text);transition:color .18s}
 .tlink:hover{color:var(--ink)}
 
+/* padrão de pontos decorativo */
+.dots{
+  position:absolute;pointer-events:none;
+  background-image:radial-gradient(var(--line-2) 1.5px,transparent 1.6px);
+  background-size:16px 16px;
+}
+
 /* ---------- topbar ---------- */
-.topbar{background:var(--dark);color:#CFC9BE;font-size:.84rem}
-.topbar-in{display:flex;align-items:center;gap:2rem;height:38px}
+.topbar{background:var(--ink);color:#A7ADB2;font-size:.84rem}
+.topbar-in{display:flex;align-items:center;gap:2rem;height:40px}
 .topbar a{color:#fff;font-weight:600}
 .topbar a:hover{color:var(--gold)}
 .topbar .sep{margin-left:auto}
@@ -92,7 +99,7 @@ section{padding:clamp(64px,8.5vw,104px) 0;position:relative}
 
 /* ---------- nav ---------- */
 .nav{
-  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
+  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);
   backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line);
 }
@@ -102,67 +109,93 @@ section{padding:clamp(64px,8.5vw,104px) 0;position:relative}
 .brand-name{font-weight:800;font-size:1.18rem;line-height:1;letter-spacing:-.01em}
 .brand-name small{display:block;font-weight:600;font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:.22rem}
 .nav-links{display:flex;gap:1.7rem;font-weight:600;font-size:.94rem}
-.nav-links a{color:var(--ink-2);transition:color .18s}
-.nav-links a:hover{color:var(--ink)}
-.btn-nav{background:var(--gold);color:#1A1200;padding:.7rem 1.25rem;font-size:.92rem;white-space:nowrap}
-.btn-nav:hover{background:var(--gold-press)}
+.nav-links a{color:var(--ink-2);transition:color .18s;position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--gold);transition:right .2s ease}
+.nav-links a:hover::after{right:0}
+.btn-nav{background:var(--ink);color:#fff;padding:.7rem 1.25rem;font-size:.92rem;white-space:nowrap}
+.btn-nav:hover{background:#26282B}
+.btn-nav svg{color:var(--gold)}
 
 /* ---------- hero ---------- */
-.hero{padding:clamp(52px,6.5vw,84px) 0 0;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(2.2rem,5vw,4.2rem);align-items:center}
+.hero{padding:clamp(52px,6.5vw,88px) 0 0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(2.4rem,5.5vw,4.6rem);align-items:center}
 .hero h1{font-size:clamp(2.3rem,4.9vw,3.7rem);margin-bottom:1.1rem;text-wrap:balance}
-.hero h1 em{font-style:normal;color:var(--gold-text)}
+.hero h1 em{font-style:normal;color:var(--gold-text);position:relative}
 .hero-sub{color:var(--muted);font-size:clamp(1.01rem,1.35vw,1.13rem);max-width:30rem;margin-bottom:1.8rem}
 .hero-sub strong{color:var(--ink);font-weight:600}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.6rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.4rem}
 .hero-nota{font-size:.88rem;color:var(--muted);margin-bottom:1.8rem}
-.hero-checks{list-style:none;display:grid;gap:.55rem;border-top:1px solid var(--line);padding-top:1.4rem;max-width:30rem}
-.hero-checks li{display:flex;gap:.65rem;align-items:flex-start;font-size:.95rem;color:var(--ink-2);font-weight:500}
-.hero-checks svg{flex:none;margin-top:.2rem;color:var(--gold-press)}
-.hero-foto{position:relative}
-.hero-foto .moldura{border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh-md)}
-.hero-foto img.obra{width:100%;height:auto;aspect-ratio:4/4.4;object-fit:cover}
-.hero-foto .legenda{
-  position:absolute;left:14px;bottom:14px;z-index:3;
-  background:rgba(23,21,15,.86);color:#fff;backdrop-filter:blur(4px);
-  border-radius:8px;padding:.55rem .85rem;font-size:.82rem;font-weight:600;
+.hero-checks{list-style:none;display:grid;gap:.6rem;border-top:1px solid var(--line);padding-top:1.4rem;max-width:30rem}
+.hero-checks li{display:flex;gap:.7rem;align-items:flex-start;font-size:.95rem;color:var(--ink-2);font-weight:500}
+.hero-checks .ck{
+  flex:none;width:20px;height:20px;border-radius:6px;background:var(--ink);color:var(--gold);
+  display:grid;place-items:center;margin-top:.1rem;
 }
-.hero-foto .legenda small{display:block;color:var(--gold);font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.hero-foto{position:relative;padding:18px 18px 0 0}
+.hero-foto .dots{top:-26px;right:-30px;width:200px;height:200px;z-index:0}
+.hero-foto::before{
+  content:"";position:absolute;top:0;right:0;bottom:38px;left:38px;
+  background:var(--gold);border-radius:14px;z-index:0;
+}
+.hero-foto .moldura{position:relative;z-index:1;border-radius:14px;overflow:hidden;box-shadow:var(--sh-md);margin:18px 18px 0 0;transform:translate(-8px,8px)}
+.hero-foto img.obra{width:100%;height:auto;aspect-ratio:4/4.5;object-fit:cover}
+.hero-foto .tag-real{
+  position:absolute;z-index:3;top:34px;left:8px;
+  background:var(--gold);color:#1A1200;font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  padding:.4rem .75rem;border-radius:7px;box-shadow:var(--sh);
+}
+.hero-foto .legenda{
+  position:absolute;z-index:3;left:8px;bottom:14px;right:auto;
+  background:rgba(12,13,14,.88);color:#fff;backdrop-filter:blur(4px);
+  border-radius:9px;padding:.7rem 1rem;font-size:.84rem;font-weight:600;
+  display:flex;align-items:center;gap:.7rem;
+}
+.hero-foto .legenda .ic{width:34px;height:34px;border-radius:8px;background:rgba(242,169,30,.18);color:var(--gold);display:grid;place-items:center;flex:none}
+.hero-foto .legenda small{display:block;color:#A7ADB2;font-weight:500;font-size:.76rem}
 .mascote{
-  position:absolute;z-index:4;bottom:-6px;right:clamp(6px,2vw,18px);width:clamp(140px,18vw,200px);height:auto;
-  filter:drop-shadow(0 14px 24px rgba(23,21,15,.35));
+  position:absolute;z-index:4;bottom:-4px;right:clamp(2px,1.5vw,12px);width:clamp(140px,17vw,195px);height:auto;
+  filter:drop-shadow(0 14px 24px rgba(12,13,14,.35));
 }
 
 /* ---------- faixa de confiança ---------- */
-.faixa{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:clamp(52px,6.5vw,84px)}
-.faixa-in{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;padding:1.5rem 0}
-.fitem{display:flex;gap:.85rem;align-items:center}
+.faixa{margin-top:clamp(56px,7vw,88px);background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.faixa-in{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding:1.6rem 0;position:relative;top:-2.4rem;margin-bottom:-2.4rem}
+.fitem{
+  display:flex;gap:.95rem;align-items:center;background:var(--card);
+  border:1px solid var(--line);border-radius:var(--r);padding:1.1rem 1.2rem;box-shadow:var(--sh);
+}
 .fitem .ic{
-  width:44px;height:44px;border-radius:9px;background:var(--gold-tint);color:var(--gold-text);
+  width:46px;height:46px;border-radius:9px;background:var(--ink);color:var(--gold);
   display:grid;place-items:center;flex:none;
 }
 .fitem b{display:block;font-size:.95rem;line-height:1.3}
 .fitem span{font-size:.83rem;color:var(--muted)}
 
 /* ---------- heads ---------- */
-.sec-head{max-width:44rem;margin-bottom:clamp(2.2rem,4vw,3.2rem)}
+.sec-head{max-width:46rem;margin-bottom:clamp(2.2rem,4vw,3.2rem)}
 .sec-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);text-wrap:balance}
 .sec-head p{color:var(--muted);margin-top:.8rem;max-width:36rem}
 
 /* ---------- serviços ---------- */
 .serv-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .scard{
-  display:flex;gap:1.05rem;align-items:flex-start;
+  position:relative;display:flex;gap:1.05rem;align-items:flex-start;
   background:var(--card);border:1px solid var(--line);border-radius:var(--r);
-  padding:1.35rem 1.4rem;box-shadow:var(--sh);
+  padding:1.4rem 1.45rem;box-shadow:var(--sh);overflow:hidden;
   transition:border-color .18s,box-shadow .18s,transform .18s ease;
 }
-.scard:hover{border-color:#D8D2C6;box-shadow:var(--sh-md);transform:translateY(-2px)}
+.scard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold);transform:scaleY(0);transform-origin:top;transition:transform .22s ease}
+.scard:hover{border-color:var(--line-2);box-shadow:var(--sh-md);transform:translateY(-2px)}
+.scard:hover::before{transform:scaleY(1)}
+.scard .num{
+  position:absolute;top:.9rem;right:1.1rem;font-weight:800;font-size:.8rem;color:var(--line-2);
+  letter-spacing:.06em;
+}
 .scard .ic{
-  width:46px;height:46px;border-radius:9px;background:var(--gold-tint);color:var(--gold-text);
+  width:46px;height:46px;border-radius:9px;background:var(--ink);color:var(--gold);
   display:grid;place-items:center;flex:none;
 }
-.scard h3{font-size:1.04rem;margin-bottom:.25rem}
+.scard h3{font-size:1.04rem;margin-bottom:.25rem;padding-right:1.6rem}
 .scard p{color:var(--muted);font-size:.91rem;line-height:1.55;margin-bottom:.5rem}
 .scard .go{font-weight:700;font-size:.88rem;color:var(--gold-text)}
 .scard:hover .go{color:var(--ink)}
@@ -171,24 +204,30 @@ section{padding:clamp(64px,8.5vw,104px) 0;position:relative}
 /* ---------- sobre ---------- */
 .sobre{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .sobre-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2.4rem,5vw,4.4rem);align-items:center}
-.sobre-foto{border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh-md);margin:0}
+.sobre-foto{position:relative;margin:0;padding:0 0 16px 16px}
+.sobre-foto::before{content:"";position:absolute;left:0;bottom:0;top:38px;right:38px;background:var(--ink);border-radius:14px}
+.sobre-foto .img{position:relative;border-radius:14px;overflow:hidden;box-shadow:var(--sh-md)}
 .sobre-foto img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
 .sobre h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:1rem;text-wrap:balance}
 .sobre p{color:var(--muted);margin-bottom:1rem;max-width:33rem}
 .sobre p strong{color:var(--ink);font-weight:600}
 .sobre-checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.7rem 1.4rem;margin:1.4rem 0 1.6rem;max-width:32rem}
-.sobre-checks li{display:flex;gap:.6rem;align-items:flex-start;font-size:.93rem;font-weight:500;color:var(--ink-2)}
-.sobre-checks svg{flex:none;margin-top:.2rem;color:var(--gold-press)}
+.sobre-checks li{display:flex;gap:.7rem;align-items:flex-start;font-size:.93rem;font-weight:500;color:var(--ink-2)}
+.sobre-checks .ck{flex:none;width:20px;height:20px;border-radius:6px;background:var(--ink);color:var(--gold);display:grid;place-items:center;margin-top:.1rem}
 
 /* ---------- obras ---------- */
-.obras-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
-.obra{margin:0}
-.obra .img{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh)}
-.obra img{width:100%;height:100%;aspect-ratio:4/3.2;object-fit:cover;transition:transform .35s ease}
-.obra:hover img{transform:scale(1.04)}
-.obra figcaption{font-size:.85rem;color:var(--muted);margin-top:.55rem;font-weight:500}
-.obra.ph .img{display:grid;place-items:center;min-height:200px;background:var(--bg-2)}
-.obra.ph .img::after{content:"⚡";font-size:1.6rem;opacity:.4}
+.obras-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.obra{position:relative;margin:0;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh)}
+.obra img{width:100%;height:100%;aspect-ratio:4/3.4;object-fit:cover;transition:transform .4s ease}
+.obra:hover img{transform:scale(1.05)}
+.obra figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:2.2rem .95rem .8rem;
+  background:linear-gradient(transparent,rgba(12,13,14,.85));
+  color:#fff;font-size:.85rem;font-weight:600;
+}
+.obra figcaption small{display:block;color:var(--gold);font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.obra.ph{display:grid;place-items:center;min-height:200px;background:var(--bg-2)}
+.obra.ph::after{content:"⚡";font-size:1.6rem;opacity:.4}
 .obras-foot{display:flex;align-items:center;gap:1.6rem;flex-wrap:wrap;margin-top:2.2rem}
 
 /* ---------- processo ---------- */
@@ -196,11 +235,11 @@ section{padding:clamp(64px,8.5vw,104px) 0;position:relative}
 .passos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .passo{
   background:var(--card);border:1px solid var(--line);border-radius:var(--r);
-  padding:1.6rem 1.5rem;box-shadow:var(--sh);
+  padding:1.7rem 1.5rem 1.5rem;box-shadow:var(--sh);position:relative;overflow:hidden;
 }
 .passo-n{
-  display:inline-grid;place-items:center;width:40px;height:40px;border-radius:9px;
-  background:var(--gold);color:#1A1200;font-weight:800;font-size:1.05rem;margin-bottom:.9rem;
+  font-weight:900;font-size:3.4rem;line-height:1;color:transparent;
+  -webkit-text-stroke:1.5px var(--gold);letter-spacing:-.02em;display:block;margin-bottom:.8rem;
 }
 .passo h3{font-size:1.05rem;margin-bottom:.35rem}
 .passo p{color:var(--muted);font-size:.92rem}
@@ -212,46 +251,57 @@ section{padding:clamp(64px,8.5vw,104px) 0;position:relative}
   padding:0 1.3rem;box-shadow:var(--sh);
 }
 .faq details+details{margin-top:.7rem}
+.faq details[open]{border-color:var(--line-2)}
 .faq summary{
   cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1rem;
   font-weight:700;font-size:.99rem;padding:1.05rem 0;
 }
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{
-  content:"+";font-size:1.3rem;font-weight:500;color:var(--gold-text);
-  transition:transform .2s ease;flex:none;
+  content:"+";width:26px;height:26px;border-radius:7px;background:var(--bg-2);
+  display:grid;place-items:center;font-size:1.1rem;font-weight:600;color:var(--ink);
+  transition:transform .2s ease,background-color .2s;flex:none;
 }
-.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details[open] summary::after{transform:rotate(45deg);background:var(--gold);color:#1A1200}
 .faq details p{color:var(--muted);font-size:.93rem;padding:0 0 1.1rem;max-width:60ch}
 
 /* ---------- banner final ---------- */
-.banner{background:var(--dark);color:#fff}
-.banner-in{display:grid;grid-template-columns:1.2fr .8fr;gap:2.4rem;align-items:center}
+.banner{background:var(--ink);color:#fff;overflow:hidden}
+.banner::before{
+  content:"";position:absolute;top:0;right:-6%;bottom:0;width:34%;
+  background:linear-gradient(115deg,transparent 0 18%,rgba(242,169,30,.14) 18% 56%,rgba(242,169,30,.32) 56%);
+  transform:skewX(-12deg);
+}
+.banner .bolt-w{position:absolute;right:4%;top:50%;transform:translateY(-50%) rotate(8deg);color:rgba(242,169,30,.4)}
+.banner-in{display:grid;grid-template-columns:1.2fr .8fr;gap:2.4rem;align-items:center;position:relative;z-index:1}
+.banner .eyebrow{color:var(--gold)}
 .banner h2{font-size:clamp(1.8rem,3.8vw,2.7rem);color:#fff;text-wrap:balance;margin-bottom:.7rem}
-.banner p{color:#B6AFA2;max-width:30rem}
+.banner p{color:#A7ADB2;max-width:30rem}
 .banner-acao{display:grid;gap:.8rem;justify-items:stretch}
-.banner-acao .btn-line{background:transparent;color:#fff;border-color:#3C372D}
+.banner-acao .btn-line{background:transparent;color:#fff;border-color:#3A3E42}
 .banner-acao .btn-line:hover{border-color:#fff}
-.banner-acao small{text-align:center;color:#B6AFA2;font-size:.84rem}
+.banner-acao small{text-align:center;color:#A7ADB2;font-size:.84rem}
 
 /* ---------- footer ---------- */
-footer{background:var(--bg);padding:3.2rem 0 2.4rem}
+footer{background:var(--ink);color:#A7ADB2;padding:3.2rem 0 2.4rem;border-top:1px solid #1E2124}
 .foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2.4rem}
-.foot h4{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-text);margin-bottom:.9rem}
-.foot ul{list-style:none;display:grid;gap:.5rem;color:var(--muted);font-size:.94rem}
-.foot a:hover{color:var(--ink)}
-.foot-brand p{color:var(--muted);font-size:.92rem;margin-top:.9rem;max-width:24rem}
-.foot-brand .lema{font-weight:700;color:var(--ink);margin-top:.9rem;font-size:.95rem}
+.foot h4{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.foot ul{list-style:none;display:grid;gap:.5rem;font-size:.94rem}
+.foot a:hover{color:#fff}
+.foot-brand .brand-name{color:#fff}
+.foot-brand .brand-name small{color:#7C8287}
+.foot-brand p{font-size:.92rem;margin-top:.9rem;max-width:24rem}
+.foot-brand .lema{font-weight:700;color:#fff;margin-top:.9rem;font-size:.95rem}
 .legal{
-  margin-top:2.4rem;padding-top:1.3rem;border-top:1px solid var(--line);
+  margin-top:2.4rem;padding-top:1.3rem;border-top:1px solid #1E2124;
   display:flex;flex-wrap:wrap;gap:.7rem 2rem;justify-content:space-between;
-  color:#9A948A;font-size:.82rem;
+  color:#7C8287;font-size:.82rem;
 }
 
 /* ---------- barra fixa mobile + FAB desktop ---------- */
 .barra{
   display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;
-  background:rgba(255,255,255,.96);backdrop-filter:blur(10px);
+  background:rgba(255,255,255,.97);backdrop-filter:blur(10px);
   border-top:1px solid var(--line);padding:.65rem .9rem calc(.65rem + env(safe-area-inset-bottom));
   gap:.7rem;
 }
@@ -274,20 +324,20 @@ footer{background:var(--bg);padding:3.2rem 0 2.4rem}
   .topbar .esc{display:none}
   .nav-links{display:none}
   .hero-grid{grid-template-columns:1fr}
-  .faixa-in{grid-template-columns:1fr;gap:.9rem;padding:1.2rem 0}
+  .faixa-in{grid-template-columns:1fr;gap:.8rem}
   .serv-grid{grid-template-columns:1fr}
   .sobre-grid{grid-template-columns:1fr}
   .sobre-foto{max-width:440px}
   .obras-grid{grid-template-columns:1fr 1fr}
   .passos-grid{grid-template-columns:1fr}
   .banner-in{grid-template-columns:1fr}
+  .banner .bolt-w{display:none}
   .foot{grid-template-columns:1fr 1fr}
 }
 @media (max-width:700px){
   .barra{display:flex}
   .fab{display:none}
   footer{padding-bottom:6.4rem}
-  .banner{padding-bottom:5.4rem}
 }
 @media (max-width:560px){
   .topbar-in{justify-content:center;gap:1rem}
@@ -371,17 +421,19 @@ footer{background:var(--bg);padding:3.2rem 0 2.4rem}
       </div>
       <p class="hero-nota">Orçamento gratuito e sem compromisso · Resposta no próprio dia útil</p>
       <ul class="hero-checks">
-        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Equipa própria, uniformizada e com EPI</li>
-        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Valor fechado antes de começar, sem surpresas</li>
-        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Obra entregue testada, identificada e limpa</li>
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Equipa própria, uniformizada e com EPI</li>
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Valor fechado antes de começar, sem surpresas</li>
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Obra entregue testada, identificada e limpa</li>
       </ul>
     </div>
     <div class="hero-foto">
+      <span class="dots" aria-hidden="true"></span>
       <div class="moldura">
         <img class="obra" src="../assets/obras/obra-4.jpg" width="900" height="1600" fetchpriority="high"
              alt="Eletricista da Uiles a passar cabos pela estrutura do teto técnico em obra comercial">
       </div>
-      <p class="legenda"><small>Obra real</small>Equipa Uiles · espaço comercial</p>
+      <span class="tag-real">⚡ Obra real</span>
+      <p class="legenda"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><span>Resposta no próprio dia<small>Seg–Sáb, horário comercial</small></span></p>
       <img class="mascote" src="../assets/mascote.png" width="800" height="980"
            alt="Mascote da Uiles: eletricista cartoon de boné vermelho a apontar para si"
            onerror="this.remove()">
@@ -390,15 +442,15 @@ footer{background:var(--bg);padding:3.2rem 0 2.4rem}
 
   <div class="faixa">
     <div class="wrap faixa-in">
-      <div class="fitem">
+      <div class="fitem rv">
         <span class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
         <span><b>Resposta no próprio dia</b><span>Seg–Sáb, em horário comercial</span></span>
       </div>
-      <div class="fitem">
+      <div class="fitem rv">
         <span class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12h6M9 16h4M7 3h10l4 4v14H3V7z"/></svg></span>
         <span><b>Orçamento fechado</b><span>Valor e prazo combinados por escrito</span></span>
       </div>
-      <div class="fitem">
+      <div class="fitem rv">
         <span class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
         <span><b>Norma e segurança</b><span>Instalação testada circuito a circuito</span></span>
       </div>
@@ -408,6 +460,7 @@ footer{background:var(--bg);padding:3.2rem 0 2.4rem}
 
 <!-- ======================= SERVIÇOS ======================= -->
 <section id="servicos" aria-labelledby="t-serv">
+  <span class="dots" style="width:180px;height:180px;top:70px;right:0" aria-hidden="true"></span>
   <div class="wrap">
     <div class="sec-head rv">
       <span class="eyebrow">Serviços</span>
@@ -416,34 +469,42 @@ footer{background:var(--bg);padding:3.2rem 0 2.4rem}
     </div>
     <div class="serv-grid">
       <a class="scard rv" data-wa="e1" href="https://wa.me/351000000000">
+        <span class="num" aria-hidden="true">01</span>
         <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21V8l9-5 9 5v13"/><path d="M3 13h18M9 21v-4h6v4"/></svg></span>
         <span><h3>Infraestruturas em obra</h3><p>Condutas, calhas técnicas e caminhos de cabos ao ritmo do cronograma da obra.</p><span class="go">Pedir orçamento →</span></span>
       </a>
       <a class="scard rv" data-wa="e2" href="https://wa.me/351000000000">
+        <span class="num" aria-hidden="true">02</span>
         <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6c6 0 6 12 12 12h4M4 18c6 0 6-12 12-12h4"/></svg></span>
         <span><h3>Cablagem e distribuição</h3><p>Passagem de cabos identificada e organizada, fácil de manter e ampliar.</p><span class="go">Pedir orçamento →</span></span>
       </a>
       <a class="scard rv" data-wa="e3" href="https://wa.me/351000000000">
+        <span class="num" aria-hidden="true">03</span>
         <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h3M8 11h3M8 15h3M15 7v8"/><circle cx="15" cy="17.5" r="1.4"/></svg></span>
         <span><h3>Quadros elétricos</h3><p>Montagem e adequação de quadros com proteção dimensionada por circuito.</p><span class="go">Pedir orçamento →</span></span>
       </a>
       <a class="scard rv" data-wa="e4" href="https://wa.me/351000000000">
+        <span class="num" aria-hidden="true">04</span>
         <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 1 3.6 10.8c-.6.5-.6 1.2-.6 2.2h-6c0-1-.1-1.7-.6-2.2A6 6 0 0 1 12 3z"/></svg></span>
         <span><h3>Iluminação técnica</h3><p>Projetos de iluminação para lojas, escritórios e áreas comuns.</p><span class="go">Pedir orçamento →</span></span>
       </a>
       <a class="scard rv" data-wa="r1" href="https://wa.me/351000000000">
+        <span class="num" aria-hidden="true">05</span>
         <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/></svg></span>
         <span><h3>Instalação completa</h3><p>Obra nova ou remodelação: cablagem, pontos e acabamento dentro da norma.</p><span class="go">Pedir orçamento →</span></span>
       </a>
       <a class="scard rv" data-wa="r2" href="https://wa.me/351000000000">
+        <span class="num" aria-hidden="true">06</span>
         <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4L15 12l-3-3z"/></svg></span>
         <span><h3>Manutenção e reparações</h3><p>Diagnóstico de curto-circuitos, quebras de energia e pontos com mau contacto.</p><span class="go">Pedir orçamento →</span></span>
       </a>
       <a class="scard rv" data-wa="r3" href="https://wa.me/351000000000">
+        <span class="num" aria-hidden="true">07</span>
         <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2"/><circle cx="12" cy="10" r="2.2"/><path d="M9.5 16h5"/></svg></span>
         <span><h3>Tomadas e pontos novos</h3><p>Novos pontos de energia, USB e iluminação onde a casa precisa.</p><span class="go">Pedir orçamento →</span></span>
       </a>
       <a class="scard rv" data-wa="r4" href="https://wa.me/351000000000">
+        <span class="num" aria-hidden="true">08</span>
         <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
         <span><h3>Adequação e segurança</h3><p>Revisão da instalação, ligação à terra e proteção contra sobrecargas.</p><span class="go">Pedir orçamento →</span></span>
       </a>
@@ -456,7 +517,7 @@ footer{background:var(--bg);padding:3.2rem 0 2.4rem}
 <section id="sobre" class="sobre" aria-labelledby="t-sobre">
   <div class="wrap sobre-grid">
     <figure class="sobre-foto rv">
-      <img loading="lazy" src="../assets/obras/obra-2.jpg" width="900" height="1600" alt="Eletricista da Uiles a conferir o projeto elétrico impresso durante a obra" onerror="this.parentElement.style.display='none'">
+      <span class="img"><img loading="lazy" src="../assets/obras/obra-2.jpg" width="900" height="1600" alt="Eletricista da Uiles a conferir o projeto elétrico impresso durante a obra" onerror="this.closest('.sobre-foto').style.display='none'"></span>
     </figure>
     <div class="rv">
       <span class="eyebrow">Quem executa</span>
@@ -465,10 +526,10 @@ footer{background:var(--bg);padding:3.2rem 0 2.4rem}
       <p>Trabalhamos em moradias e apartamentos, espaços comerciais e obras prediais, com o compromisso de entregar a instalação testada, identificada e organizada.</p>
       <!-- TODO:client confirmar habilitações (ex.: DGEG) e anos de experiência para adicionar aqui -->
       <ul class="sobre-checks">
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Acompanhamento direto do responsável</li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Ferramenta profissional</li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Material certificado</li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Comunicação clara até ao fim</li>
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Acompanhamento direto do responsável</li>
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Ferramenta profissional</li>
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Material certificado</li>
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Comunicação clara até ao fim</li>
       </ul>
       <a class="btn btn-gold" data-wa="sobre" href="https://wa.me/351000000000">Falar com a equipa</a>
     </div>
@@ -484,12 +545,12 @@ footer{background:var(--bg);padding:3.2rem 0 2.4rem}
       <p>Fotos reais do nosso trabalho, sem banco de imagens. Acompanhe o dia a dia no Instagram.</p>
     </div>
     <div class="obras-grid">
-      <figure class="obra rv"><span class="img"><img loading="lazy" src="../assets/obras/obra-4.jpg" width="900" height="1600" alt="Eletricista a passar cabos pela estrutura metálica do teto técnico em obra comercial" onerror="this.closest('.obra').classList.add('ph');this.remove()"></span><figcaption>Passagem de cabos em teto técnico</figcaption></figure>
-      <figure class="obra rv"><span class="img"><img loading="lazy" src="../assets/obras/obra-1.jpg" width="900" height="1600" alt="Visão geral da infraestrutura elétrica com condutas instaladas no teto da obra" onerror="this.closest('.obra').classList.add('ph');this.remove()"></span><figcaption>Condutas e perfilados alinhados</figcaption></figure>
-      <figure class="obra rv"><span class="img"><img loading="lazy" src="../assets/obras/obra-6.jpg" width="900" height="1600" alt="Equipa da Uiles a trabalhar em conjunto na instalação elétrica da obra" onerror="this.closest('.obra').classList.add('ph');this.remove()"></span><figcaption>Execução em equipa na obra</figcaption></figure>
-      <figure class="obra rv"><span class="img"><img loading="lazy" src="../assets/obras/obra-3.jpg" width="900" height="1600" alt="Eletricista no topo da escada a instalar a estrutura do teto falso" onerror="this.closest('.obra').classList.add('ph');this.remove()"></span><figcaption>Montagem da estrutura do teto falso</figcaption></figure>
-      <figure class="obra rv"><span class="img"><img loading="lazy" src="../assets/obras/obra-7.jpg" width="900" height="1600" alt="Eletricista a finalizar a passagem de cabos na estrutura do teto técnico" onerror="this.closest('.obra').classList.add('ph');this.remove()"></span><figcaption>Acabamento no teto técnico</figcaption></figure>
-      <figure class="obra rv"><span class="img"><img loading="lazy" src="../assets/obras/obra-5.jpg" width="900" height="1600" alt="Dois eletricistas da equipa a trabalhar em conjunto na instalação" onerror="this.closest('.obra').classList.add('ph');this.remove()"></span><figcaption>Equipa em ação na obra</figcaption></figure>
+      <figure class="obra rv"><img loading="lazy" src="../assets/obras/obra-4.jpg" width="900" height="1600" alt="Eletricista a passar cabos pela estrutura metálica do teto técnico em obra comercial" onerror="this.closest('.obra').classList.add('ph');this.nextElementSibling?.remove();this.remove()"><figcaption><small>Obra comercial</small>Passagem de cabos em teto técnico</figcaption></figure>
+      <figure class="obra rv"><img loading="lazy" src="../assets/obras/obra-1.jpg" width="900" height="1600" alt="Visão geral da infraestrutura elétrica com condutas instaladas no teto da obra" onerror="this.closest('.obra').classList.add('ph');this.nextElementSibling?.remove();this.remove()"><figcaption><small>Infraestrutura</small>Condutas e perfilados alinhados</figcaption></figure>
+      <figure class="obra rv"><img loading="lazy" src="../assets/obras/obra-6.jpg" width="900" height="1600" alt="Equipa da Uiles a trabalhar em conjunto na instalação elétrica da obra" onerror="this.closest('.obra').classList.add('ph');this.nextElementSibling?.remove();this.remove()"><figcaption><small>Equipa</small>Execução em equipa na obra</figcaption></figure>
+      <figure class="obra rv"><img loading="lazy" src="../assets/obras/obra-3.jpg" width="900" height="1600" alt="Eletricista no topo da escada a instalar a estrutura do teto falso" onerror="this.closest('.obra').classList.add('ph');this.nextElementSibling?.remove();this.remove()"><figcaption><small>Montagem</small>Estrutura do teto falso</figcaption></figure>
+      <figure class="obra rv"><img loading="lazy" src="../assets/obras/obra-7.jpg" width="900" height="1600" alt="Eletricista a finalizar a passagem de cabos na estrutura do teto técnico" onerror="this.closest('.obra').classList.add('ph');this.nextElementSibling?.remove();this.remove()"><figcaption><small>Acabamento</small>Detalhe no teto técnico</figcaption></figure>
+      <figure class="obra rv"><img loading="lazy" src="../assets/obras/obra-5.jpg" width="900" height="1600" alt="Dois eletricistas da equipa a trabalhar em conjunto na instalação" onerror="this.closest('.obra').classList.add('ph');this.nextElementSibling?.remove();this.remove()"><figcaption><small>Equipa</small>Trabalho em conjunto na obra</figcaption></figure>
     </div>
     <div class="obras-foot rv">
       <a class="btn btn-gold" data-wa="projetos" href="https://wa.me/351000000000">Quero um orçamento assim</a>
@@ -529,7 +590,7 @@ footer{background:var(--bg);padding:3.2rem 0 2.4rem}
 <section id="faq" aria-labelledby="t-faq">
   <div class="wrap">
     <div class="sec-head rv" style="text-align:center;margin-inline:auto">
-      <span class="eyebrow">Dúvidas frequentes</span>
+      <span class="eyebrow" style="justify-content:center">Dúvidas frequentes</span>
       <h2 id="t-faq">Perguntas que nos fazem todos os dias</h2>
     </div>
     <div class="faq rv">
@@ -555,9 +616,10 @@ footer{background:var(--bg);padding:3.2rem 0 2.4rem}
 
 <!-- ======================= BANNER FINAL ======================= -->
 <section id="contato" class="banner" aria-labelledby="t-cta">
+  <svg class="bolt-w" width="190" height="190" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
   <div class="wrap banner-in">
     <div class="rv">
-      <span class="eyebrow" style="color:var(--gold)">Contactos</span>
+      <span class="eyebrow">Contactos</span>
       <h2 id="t-cta">Vamos pôr a sua obra em dia?</h2>
       <p>Descreva o serviço ou envie fotos: respondemos com um orçamento claro, no próprio dia útil.</p>
     </div>
