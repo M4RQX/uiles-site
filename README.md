@@ -9,7 +9,7 @@ empresa de Brendo Uiles. Duas direções completas, estáticas e autocontidas �
 |---|---|
 | `index.html` | Chooser de pitch — mostra as 2 versões lado a lado (para enviar ao cliente) |
 | `v1/index.html` | **Versão 1 "A Gente Resolve!"** — bold, fiel ao Instagram (preto + dourado + vermelho, Anton/Archivo) |
-| `v2/index.html` | **Versão 2 "Mascote em Ação"** — clara e cartoon, na pegada do Instagram: Archivo Black, contornos grossos, balão de fala do mascote, burst dourado, zigzags e meios-tons; hero mascot-ready |
+| `v2/index.html` | **Versão 2 "Profissional Moderno"** — clara e limpa, no padrão dos melhores sites do setor: Bricolage Grotesque, cartões arredondados, sombras suaves, dourado confiante, foto hero 16:9 com chips flutuantes; hero mascot-ready |
 | `assets/obras/` | 6 fotos reais extraídas do reel do Instagram (frames hi-res) |
 | `.claude/skills/` | Skills `copywriting` + `cro` (coreyhaines31/marketingskills) usadas na copy |
 
