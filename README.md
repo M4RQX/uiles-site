@@ -10,6 +10,7 @@ empresa de Brendo Uiles. Duas direções completas, estáticas e autocontidas �
 | `index.html` | Chooser de pitch — mostra as 2 versões lado a lado (para enviar ao cliente) |
 | `v1/index.html` | **Versão 1 "A Gente Resolve!"** — bold, fiel ao Instagram (preto + dourado + vermelho, Anton/Archivo) |
 | `v2/index.html` | **Versão 2 "Profissional Clássico"** — branco limpo, estrutura convencional de site de serviços (topbar de contactos, hero dividido com foto real, faixa de confiança, grelha de serviços, sobre, galeria, processo, FAQ, banner escuro, barra fixa mobile WhatsApp+Ligar); Archivo; hero mascot-ready |
+| `v3/index.html` | **Versão 3 "Industrial Dourada"** — dourado dominante: hero amarelo sólido com Anton preto, foto em moldura preta a transbordar para o branco, serviços em linhas numeradas, secção preta de valores, mosaico de obras, cartão final preto sobre dourado; mascot-ready |
 | `assets/obras/` | 6 fotos reais extraídas do reel do Instagram (frames hi-res) |
 | `.claude/skills/` | Skills `copywriting` + `cro` (coreyhaines31/marketingskills) usadas na copy |
 
