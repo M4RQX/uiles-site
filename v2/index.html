@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Uiles Instalações Elétricas — Segurança em cada detalhe</title>
-<meta name="description" content="Instalações elétricas residenciais, comerciais e prediais com equipa própria e ferramenta profissional. Orçamento claro pelo WhatsApp, resposta no próprio dia.">
-<meta name="theme-color" content="#FAF7F0">
+<title>Uiles Instalações Elétricas — Eletricista profissional</title>
+<meta name="description" content="Instalações elétricas residenciais, comerciais e prediais com equipa própria e ferramenta profissional. Orçamento gratuito pelo WhatsApp, resposta no próprio dia.">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="canonical" href="https://m4rqx.github.io/uiles-site/v2/"><!-- TODO:client trocar pelo domínio definitivo -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_PT">
-<meta property="og:title" content="Uiles Instalações Elétricas — Segurança em cada detalhe">
-<meta property="og:description" content="Instalações elétricas residenciais, comerciais e prediais. Orçamento pelo WhatsApp.">
+<meta property="og:title" content="Uiles Instalações Elétricas — Eletricista profissional">
+<meta property="og:description" content="Instalações elétricas residenciais, comerciais e prediais. Orçamento gratuito pelo WhatsApp.">
 <meta property="og:image" content="https://m4rqx.github.io/uiles-site/assets/og.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230B0B0D' stroke='%23F2A91E' stroke-width='4'/%3E%3Cpath d='M36 12 L22 36 L31 36 L27 52 L43 27 L33 27 Z' fill='%23F2A91E'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -32,16 +32,16 @@
 </script>
 <style>
 :root{
-  --bg:#FAF7F0; --card:#FFFFFF; --tint:#F3EDE1; --tint-gold:#FCF0D8;
-  --ink:#1D1915; --ink-2:#3A342C; --muted:#6A6258;
-  --gold:#F2A91E; --gold-hi:#FFC93C; --gold-deep:#8A5C06;
-  --red:#DB011C;
-  --line:rgba(29,25,21,.1);
-  --fd:"Archivo Black",sans-serif; --fb:"Archivo",sans-serif;
-  --container:1140px;
+  --bg:#FFFFFF; --bg-2:#F7F5F1; --card:#FFFFFF;
+  --ink:#17150F; --ink-2:#36322A; --muted:#6A645A;
+  --gold:#F2A91E; --gold-press:#E09A10; --gold-tint:#FCF1D9; --gold-text:#8F6105;
+  --dark:#17150F;
+  --line:#E8E4DC;
+  --f:"Archivo",sans-serif;
+  --container:1150px;
   --r:10px;
-  --sh:0 18px 44px -18px rgba(29,25,21,.22);
-  --sh-soft:0 10px 28px -14px rgba(29,25,21,.16);
+  --sh:0 1px 2px rgba(23,21,15,.05);
+  --sh-md:0 12px 28px -14px rgba(23,21,15,.18);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -51,310 +51,270 @@ html{scroll-behavior:smooth}
 }
 body{
   background:var(--bg);color:var(--ink);
-  font-family:var(--fb);font-weight:400;font-size:17.5px;line-height:1.62;
+  font-family:var(--f);font-weight:400;font-size:17px;line-height:1.65;
   -webkit-font-smoothing:antialiased;overflow-x:hidden;
 }
 ::selection{background:var(--gold);color:#1A1000}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
-:focus-visible{outline:3px solid var(--gold-deep);outline-offset:3px;border-radius:6px}
-.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:.6rem 1rem;font-weight:600;z-index:99;border-radius:8px}
+:focus-visible{outline:3px solid var(--gold-press);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:.6rem 1rem;font-weight:600;z-index:99;border-radius:6px}
 .skip:focus{left:8px}
 .wrap{max-width:var(--container);margin:0 auto;padding:0 clamp(20px,4.5vw,36px)}
-h1,h2{font-family:var(--fd);font-weight:400;line-height:1.08;letter-spacing:-.005em}
-h3{font-family:var(--fb);font-weight:700;letter-spacing:-.005em}
-section{padding:clamp(72px,9.5vw,116px) 0;position:relative}
-.marca{
-  background-image:linear-gradient(transparent 62%,var(--gold) 62% 92%,transparent 92%);
-  padding:0 .06em;
+h1,h2{font-weight:800;line-height:1.12;letter-spacing:-.018em}
+h3{font-weight:700;letter-spacing:-.008em}
+section{padding:clamp(64px,8.5vw,104px) 0;position:relative}
+.eyebrow{
+  display:block;font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold-text);margin-bottom:.9rem;
 }
-.pill{
-  display:inline-flex;align-items:center;gap:.5rem;
-  background:var(--card);border:1px solid var(--line);border-radius:8px;
-  box-shadow:var(--sh-soft);
-  font-weight:600;font-size:.86rem;padding:.5rem 1.05rem;color:var(--ink-2);
-}
-.pill .dot{width:8px;height:8px;border-radius:50%;background:var(--red);flex:none}
-.pill.gold{background:var(--gold);border-color:transparent;color:var(--ink)}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:.6rem;cursor:pointer;
-  font-family:var(--fb);font-weight:600;font-size:1rem;border-radius:10px;
-  transition:transform .18s ease,box-shadow .18s ease,background-color .18s;
+  font-weight:700;font-size:.99rem;border-radius:var(--r);
+  transition:background-color .18s,border-color .18s,transform .18s ease,box-shadow .18s ease;
 }
-.btn-gold{
-  background:var(--gold);color:var(--ink);padding:1.1rem 2.1rem;
-  box-shadow:0 14px 30px -10px rgba(242,169,30,.55);
-}
-.btn-gold:hover{background:var(--gold-hi);transform:translateY(-2px);box-shadow:0 18px 36px -10px rgba(242,169,30,.65)}
-.btn-gold:active{transform:translateY(0)}
-.btn-soft{background:var(--card);color:var(--ink);border:1px solid var(--line);padding:1.05rem 1.8rem;box-shadow:var(--sh-soft)}
-.btn-soft:hover{transform:translateY(-2px);border-color:rgba(29,25,21,.22)}
-.linkona{font-weight:600;color:var(--gold-deep);border-bottom:2px solid rgba(242,169,30,.5);padding-bottom:.1rem;transition:border-color .2s,color .2s}
-.linkona:hover{color:var(--ink);border-color:var(--ink)}
+.btn-gold{background:var(--gold);color:#1A1200;padding:1rem 1.7rem;box-shadow:var(--sh)}
+.btn-gold:hover{background:var(--gold-press);transform:translateY(-1px);box-shadow:var(--sh-md)}
+.btn-line{border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:.95rem 1.5rem}
+.btn-line:hover{border-color:var(--ink-2)}
+.btn-dark{background:var(--dark);color:#fff;padding:1rem 1.7rem}
+.btn-dark:hover{background:#2A261E;transform:translateY(-1px)}
+.tlink{font-weight:700;color:var(--gold-text);transition:color .18s}
+.tlink:hover{color:var(--ink)}
+
+/* ---------- topbar ---------- */
+.topbar{background:var(--dark);color:#CFC9BE;font-size:.84rem}
+.topbar-in{display:flex;align-items:center;gap:2rem;height:38px}
+.topbar a{color:#fff;font-weight:600}
+.topbar a:hover{color:var(--gold)}
+.topbar .sep{margin-left:auto}
+.topbar svg{vertical-align:-2px;margin-right:.35rem;color:var(--gold)}
 
 /* ---------- nav ---------- */
 .nav{
-  position:sticky;top:0;z-index:50;
-  background:rgba(250,247,240,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line);
 }
-.nav-in{display:flex;align-items:center;gap:1.5rem;height:80px}
+.nav-in{display:flex;align-items:center;gap:1.6rem;height:78px}
 .brand{display:flex;align-items:center;gap:.7rem;margin-right:auto}
-.brand svg{width:44px;height:44px;flex:none}
-.brand-name{font-family:var(--fd);font-weight:800;font-size:1.2rem;line-height:1}
-.brand-name small{display:block;font-family:var(--fb);font-weight:600;font-size:.56rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);margin-top:.22rem}
-.nav-links{display:flex;gap:1.8rem;font-weight:600;font-size:.94rem}
-.nav-links a{color:var(--muted);transition:color .2s}
+.brand svg{width:46px;height:46px;flex:none}
+.brand-name{font-weight:800;font-size:1.18rem;line-height:1;letter-spacing:-.01em}
+.brand-name small{display:block;font-weight:600;font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:.22rem}
+.nav-links{display:flex;gap:1.7rem;font-weight:600;font-size:.94rem}
+.nav-links a{color:var(--ink-2);transition:color .18s}
 .nav-links a:hover{color:var(--ink)}
-.btn-nav{background:var(--ink);color:#fff;padding:.68rem 1.3rem;font-size:.9rem;white-space:nowrap;border-radius:8px}
-.btn-nav:hover{background:var(--ink-2);transform:translateY(-1px)}
+.btn-nav{background:var(--gold);color:#1A1200;padding:.7rem 1.25rem;font-size:.92rem;white-space:nowrap}
+.btn-nav:hover{background:var(--gold-press)}
 
-/* ---------- hero (palco central) ---------- */
-.hero{padding:clamp(48px,6vw,80px) 0 clamp(64px,8vw,96px);text-align:center;overflow:hidden}
-.hero .pill{margin-bottom:1.3rem}
-.hero h1{font-size:clamp(2.5rem,5.8vw,4.3rem);max-width:18ch;margin:0 auto 1.1rem;text-wrap:balance}
-.hero-sub{color:var(--muted);font-size:clamp(1.02rem,1.4vw,1.18rem);max-width:34rem;margin:0 auto 2.2rem}
+/* ---------- hero ---------- */
+.hero{padding:clamp(52px,6.5vw,84px) 0 0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(2.2rem,5vw,4.2rem);align-items:center}
+.hero h1{font-size:clamp(2.3rem,4.9vw,3.7rem);margin-bottom:1.1rem;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--gold-text)}
+.hero-sub{color:var(--muted);font-size:clamp(1.01rem,1.35vw,1.13rem);max-width:30rem;margin-bottom:1.8rem}
 .hero-sub strong{color:var(--ink);font-weight:600}
-.hero-ctas{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:1.2rem;margin-bottom:clamp(2.6rem,5vw,3.6rem)}
-.palco{position:relative;width:min(820px,100%);margin:0 auto}
-.palco-foto{
-  position:relative;border-radius:calc(var(--r) + 6px);overflow:hidden;box-shadow:var(--sh);
-  background:var(--tint);
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.6rem}
+.hero-nota{font-size:.88rem;color:var(--muted);margin-bottom:1.8rem}
+.hero-checks{list-style:none;display:grid;gap:.55rem;border-top:1px solid var(--line);padding-top:1.4rem;max-width:30rem}
+.hero-checks li{display:flex;gap:.65rem;align-items:flex-start;font-size:.95rem;color:var(--ink-2);font-weight:500}
+.hero-checks svg{flex:none;margin-top:.2rem;color:var(--gold-press)}
+.hero-foto{position:relative}
+.hero-foto .moldura{border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh-md)}
+.hero-foto img.obra{width:100%;height:auto;aspect-ratio:4/4.4;object-fit:cover}
+.hero-foto .legenda{
+  position:absolute;left:14px;bottom:14px;z-index:3;
+  background:rgba(23,21,15,.86);color:#fff;backdrop-filter:blur(4px);
+  border-radius:8px;padding:.55rem .85rem;font-size:.82rem;font-weight:600;
 }
-.palco-foto img{width:100%;height:auto;aspect-ratio:16/9.4;object-fit:cover;object-position:50% 38%}
+.hero-foto .legenda small{display:block;color:var(--gold);font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 .mascote{
-  position:absolute;z-index:3;bottom:0;right:clamp(8px,4vw,40px);width:clamp(150px,24vw,230px);height:auto;
-  filter:drop-shadow(0 16px 28px rgba(29,25,21,.35));
+  position:absolute;z-index:4;bottom:-6px;right:clamp(6px,2vw,18px);width:clamp(140px,18vw,200px);height:auto;
+  filter:drop-shadow(0 14px 24px rgba(23,21,15,.35));
 }
-.flutua{
-  position:absolute;z-index:4;box-shadow:var(--sh);border-radius:8px;
-  background:var(--card);padding:.75rem 1.05rem;text-align:left;
-  display:flex;align-items:center;gap:.65rem;
-}
-.flutua b{display:block;font-size:.9rem;line-height:1.25}
-.flutua span{font-size:.78rem;color:var(--muted)}
-.flutua .ic{
-  width:38px;height:38px;border-radius:7px;background:var(--tint-gold);color:var(--gold-deep);
+
+/* ---------- faixa de confiança ---------- */
+.faixa{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:clamp(52px,6.5vw,84px)}
+.faixa-in{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;padding:1.5rem 0}
+.fitem{display:flex;gap:.85rem;align-items:center}
+.fitem .ic{
+  width:44px;height:44px;border-radius:9px;background:var(--gold-tint);color:var(--gold-text);
   display:grid;place-items:center;flex:none;
 }
-.flutua.f1{top:18px;left:clamp(8px,3vw,28px)}
-.flutua.f2{bottom:18px;left:clamp(8px,3vw,28px)}
-.palco-cap{margin-top:1rem;font-size:.86rem;color:var(--muted)}
+.fitem b{display:block;font-size:.95rem;line-height:1.3}
+.fitem span{font-size:.83rem;color:var(--muted)}
 
 /* ---------- heads ---------- */
-.sec-head{max-width:46rem;margin:0 auto clamp(2.6rem,5vw,3.8rem);text-align:center}
-.sec-head .pill{margin-bottom:1.1rem}
-.sec-head h2{font-size:clamp(1.9rem,4.2vw,3rem);text-wrap:balance}
-.sec-head p{color:var(--muted);margin-top:.9rem;max-width:36rem;margin-inline:auto}
+.sec-head{max-width:44rem;margin-bottom:clamp(2.2rem,4vw,3.2rem)}
+.sec-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);text-wrap:balance}
+.sec-head p{color:var(--muted);margin-top:.8rem;max-width:36rem}
 
-/* ---------- quadro de serviços (painel único) ---------- */
-.serv{background:linear-gradient(180deg,var(--bg),var(--tint) 160%)}
-.board{
-  max-width:860px;margin:0 auto;background:var(--card);border:1px solid var(--line);
-  border-radius:calc(var(--r) + 6px);box-shadow:var(--sh);overflow:hidden;
-}
-.bgrupo{
-  display:flex;align-items:center;gap:.8rem;padding:1.5rem 1.7rem .7rem;
-}
-.bgrupo span{
-  font-family:var(--fb);font-weight:700;font-size:.95rem;
-  background:var(--tint-gold);color:var(--gold-deep);border-radius:7px;padding:.4rem 1rem;
-}
-.bgrupo::after{content:"";flex:1;height:1px;background:var(--line)}
-.srow{
-  display:flex;align-items:flex-start;gap:1.1rem;padding:1.15rem 1.7rem;
-  transition:background-color .2s;
-}
-.srow+.srow{border-top:1px solid var(--line)}
-.srow:hover{background:var(--tint-gold)}
-.srow-n{
-  font-family:var(--fb);font-weight:700;font-size:.92rem;flex:none;width:36px;height:36px;border-radius:7px;
-  display:grid;place-items:center;background:var(--tint);color:var(--ink-2);
-}
-.srow:hover .srow-n{background:var(--gold);color:var(--ink)}
-.srow-t{flex:1}
-.srow-t strong{display:block;font-weight:600;font-size:1.05rem}
-.srow-t span{color:var(--muted);font-size:.91rem;line-height:1.55}
-.srow .go{
-  flex:none;margin-top:.25rem;display:inline-flex;align-items:center;gap:.45rem;
-  background:var(--card);border:1px solid var(--line);border-radius:7px;
-  font-weight:600;font-size:.82rem;padding:.45rem .85rem;color:var(--ink-2);
-  transition:background-color .18s,color .18s,border-color .18s;
-}
-.srow:hover .go{background:var(--ink);color:#fff;border-color:var(--ink)}
-.srow .go svg{color:#25D366}
-.srow:hover .go svg{color:var(--gold-hi)}
-.board-foot{
-  border-top:1px solid var(--line);padding:1.1rem 1.7rem;text-align:center;
-  font-size:.9rem;color:var(--muted);background:var(--tint);
-}
-@media (max-width:560px){.srow .go span{display:none}}
-
-/* ---------- obras (fila horizontal) ---------- */
-.obras{overflow:hidden}
-.fila{
-  display:flex;gap:clamp(1.1rem,2.6vw,1.8rem);overflow-x:auto;scroll-snap-type:x mandatory;
-  padding:.6rem 6vw 1.6rem;scrollbar-width:thin;scrollbar-color:var(--gold) transparent;
-}
-.foto{
-  flex:0 0 min(300px,74vw);scroll-snap-align:center;position:relative;margin:0;
-  border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-soft);background:var(--tint);
-}
-.foto img{width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .4s ease}
-.foto:hover img{transform:scale(1.04)}
-.foto figcaption{
-  position:absolute;left:12px;right:12px;bottom:12px;
-  background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-radius:8px;
-  padding:.6rem .85rem;font-weight:600;font-size:.84rem;line-height:1.3;box-shadow:var(--sh-soft);
-}
-.foto figcaption small{display:block;font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep)}
-.foto.ph{display:grid;place-items:center;min-height:340px}
-.foto.ph::after{content:"⚡";font-size:2rem;opacity:.4}
-.desliza{
-  display:flex;align-items:center;justify-content:center;gap:.6rem;margin-top:.2rem;
-  font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
-}
-.obras-foot{display:flex;justify-content:center;align-items:center;gap:1.6rem;flex-wrap:wrap;margin-top:2.4rem}
-
-/* ---------- garantias (bento) ---------- */
-.gar{background:linear-gradient(180deg,var(--bg),var(--tint) 170%)}
-.bento{
-  max-width:920px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:1.1rem;
-}
-.gitem{
+/* ---------- serviços ---------- */
+.serv-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.scard{
+  display:flex;gap:1.05rem;align-items:flex-start;
   background:var(--card);border:1px solid var(--line);border-radius:var(--r);
-  box-shadow:var(--sh-soft);padding:1.7rem 1.5rem;
-  transition:transform .2s ease,box-shadow .2s ease;
+  padding:1.35rem 1.4rem;box-shadow:var(--sh);
+  transition:border-color .18s,box-shadow .18s,transform .18s ease;
 }
-.gitem:hover{transform:translateY(-4px);box-shadow:var(--sh)}
-.gitem.escuro{background:var(--ink);border-color:var(--ink)}
-.gitem.escuro h3{color:#fff}
-.gitem.escuro p{color:#B9B2A8}
-.gitem.escuro .ic{background:rgba(242,169,30,.18);color:var(--gold)}
-.gitem .ic{
-  width:46px;height:46px;border-radius:8px;background:var(--tint-gold);color:var(--gold-deep);
-  display:grid;place-items:center;margin-bottom:1rem;
+.scard:hover{border-color:#D8D2C6;box-shadow:var(--sh-md);transform:translateY(-2px)}
+.scard .ic{
+  width:46px;height:46px;border-radius:9px;background:var(--gold-tint);color:var(--gold-text);
+  display:grid;place-items:center;flex:none;
 }
-.gitem h3{font-size:1.18rem;margin-bottom:.4rem}
-.gitem p{color:var(--muted);font-size:.93rem}
+.scard h3{font-size:1.04rem;margin-bottom:.25rem}
+.scard p{color:var(--muted);font-size:.91rem;line-height:1.55;margin-bottom:.5rem}
+.scard .go{font-weight:700;font-size:.88rem;color:var(--gold-text)}
+.scard:hover .go{color:var(--ink)}
+.serv-nota{margin-top:1.6rem;color:var(--muted);font-size:.93rem}
 
 /* ---------- sobre ---------- */
-.sobre{overflow:hidden}
-.sobre-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(2.4rem,5.5vw,4.8rem);align-items:center}
-.sobre-copy .pill{margin-bottom:1.1rem}
-.sobre h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:1.2rem;text-wrap:balance}
-.cita{
-  font-family:var(--fd);font-weight:700;font-size:1.18rem;line-height:1.4;
-  border-left:4px solid var(--gold);padding-left:1.1rem;margin-bottom:1.3rem;max-width:30rem;
-}
+.sobre{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sobre-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2.4rem,5vw,4.4rem);align-items:center}
+.sobre-foto{border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh-md);margin:0}
+.sobre-foto img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.sobre h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:1rem;text-wrap:balance}
 .sobre p{color:var(--muted);margin-bottom:1rem;max-width:33rem}
 .sobre p strong{color:var(--ink);font-weight:600}
-.selos{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem;list-style:none}
-.selos li{
-  display:inline-flex;gap:.5rem;align-items:center;
-  background:var(--card);border:1px solid var(--line);border-radius:7px;box-shadow:var(--sh-soft);
-  padding:.5rem 1rem;font-size:.86rem;font-weight:600;color:var(--ink-2);
-}
-.selos svg{color:var(--gold-deep);flex:none}
-.sobre-photo{
-  position:relative;margin:0;border-radius:calc(var(--r) + 4px);overflow:hidden;box-shadow:var(--sh);
-  justify-self:center;width:min(420px,100%);
-}
-.sobre-photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
-.sobre-photo figcaption{
-  position:absolute;left:12px;right:12px;bottom:12px;
-  background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-radius:8px;
-  padding:.6rem .85rem;font-weight:600;font-size:.85rem;box-shadow:var(--sh-soft);
-}
+.sobre-checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.7rem 1.4rem;margin:1.4rem 0 1.6rem;max-width:32rem}
+.sobre-checks li{display:flex;gap:.6rem;align-items:flex-start;font-size:.93rem;font-weight:500;color:var(--ink-2)}
+.sobre-checks svg{flex:none;margin-top:.2rem;color:var(--gold-press)}
 
-/* ---------- percurso ---------- */
-.passos{padding-top:0}
-.percurso{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;max-width:960px;margin:0 auto}
-.percurso::before{
-  content:"";position:absolute;top:30px;left:10%;right:10%;height:0;
-  border-top:2px dashed rgba(29,25,21,.22);
-}
-.no{position:relative;text-align:center;padding:0 1rem}
-.no-n{
-  width:58px;height:58px;margin:0 auto 1.1rem;display:grid;place-items:center;position:relative;z-index:1;
-  background:var(--gold);color:var(--ink);font-family:var(--fd);font-weight:400;font-size:1.35rem;
-  border-radius:12px;box-shadow:0 12px 26px -10px rgba(242,169,30,.6);
-}
-.no h3{font-size:1.15rem;margin-bottom:.4rem}
-.no p{color:var(--muted);font-size:.92rem;max-width:24rem;margin:0 auto}
+/* ---------- obras ---------- */
+.obras-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.obra{margin:0}
+.obra .img{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh)}
+.obra img{width:100%;height:100%;aspect-ratio:4/3.2;object-fit:cover;transition:transform .35s ease}
+.obra:hover img{transform:scale(1.04)}
+.obra figcaption{font-size:.85rem;color:var(--muted);margin-top:.55rem;font-weight:500}
+.obra.ph .img{display:grid;place-items:center;min-height:200px;background:var(--bg-2)}
+.obra.ph .img::after{content:"⚡";font-size:1.6rem;opacity:.4}
+.obras-foot{display:flex;align-items:center;gap:1.6rem;flex-wrap:wrap;margin-top:2.2rem}
 
-/* ---------- contactos (cartão) ---------- */
-.contato{background:linear-gradient(180deg,var(--bg),var(--tint-gold) 175%)}
-.cartao{
-  max-width:880px;margin:0 auto;background:var(--ink);color:#fff;border-radius:14px;
-  box-shadow:0 30px 70px -26px rgba(29,25,21,.5);
-  padding:clamp(1.8rem,5vw,3.2rem);
-  display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.6rem,4vw,3rem);align-items:center;
+/* ---------- processo ---------- */
+.passos{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.passos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.passo{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:1.6rem 1.5rem;box-shadow:var(--sh);
 }
-.cartao h3{font-size:clamp(1.5rem,3.2vw,2.1rem);color:#fff;line-height:1.15;margin-bottom:.6rem}
-.cartao .sub{color:#B9B2A8;font-size:.96rem;margin-bottom:1.5rem}
-.cartao ul{list-style:none;display:grid;gap:.7rem}
-.cartao ul li{display:flex;gap:.7rem;align-items:center;font-weight:600;font-size:.97rem;color:#EDE8E0}
-.cartao ul .ic{width:38px;height:38px;border-radius:7px;background:rgba(242,169,30,.16);color:var(--gold);display:grid;place-items:center;flex:none}
-.cartao ul a:hover{text-decoration:underline}
-.cartao-acao{text-align:center}
-.cartao-acao .logo-big{width:clamp(74px,9vw,96px);height:auto;margin:0 auto 1.2rem}
-.cartao-acao .btn-gold{width:100%;font-size:1.05rem}
-.cartao-acao small{display:block;margin-top:.8rem;color:#B9B2A8;font-weight:600;font-size:.84rem}
-.c-note{text-align:center;color:var(--muted);font-size:.92rem;margin-top:2.2rem}
-.c-note a{color:var(--gold-deep);border-bottom:2px solid rgba(242,169,30,.5);font-weight:600}
+.passo-n{
+  display:inline-grid;place-items:center;width:40px;height:40px;border-radius:9px;
+  background:var(--gold);color:#1A1200;font-weight:800;font-size:1.05rem;margin-bottom:.9rem;
+}
+.passo h3{font-size:1.05rem;margin-bottom:.35rem}
+.passo p{color:var(--muted);font-size:.92rem}
+
+/* ---------- faq ---------- */
+.faq{max-width:780px;margin:0 auto}
+.faq details{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:0 1.3rem;box-shadow:var(--sh);
+}
+.faq details+details{margin-top:.7rem}
+.faq summary{
+  cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  font-weight:700;font-size:.99rem;padding:1.05rem 0;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";font-size:1.3rem;font-weight:500;color:var(--gold-text);
+  transition:transform .2s ease;flex:none;
+}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--muted);font-size:.93rem;padding:0 0 1.1rem;max-width:60ch}
+
+/* ---------- banner final ---------- */
+.banner{background:var(--dark);color:#fff}
+.banner-in{display:grid;grid-template-columns:1.2fr .8fr;gap:2.4rem;align-items:center}
+.banner h2{font-size:clamp(1.8rem,3.8vw,2.7rem);color:#fff;text-wrap:balance;margin-bottom:.7rem}
+.banner p{color:#B6AFA2;max-width:30rem}
+.banner-acao{display:grid;gap:.8rem;justify-items:stretch}
+.banner-acao .btn-line{background:transparent;color:#fff;border-color:#3C372D}
+.banner-acao .btn-line:hover{border-color:#fff}
+.banner-acao small{text-align:center;color:#B6AFA2;font-size:.84rem}
 
 /* ---------- footer ---------- */
-footer{background:var(--bg);border-top:1px solid var(--line);padding:2.8rem 0 6.6rem}
-.foot{display:flex;flex-wrap:wrap;gap:1.5rem 3rem;align-items:center;justify-content:space-between;color:var(--muted);font-size:.9rem}
-.foot .lema{font-family:var(--fd);font-weight:700;color:var(--ink);font-size:1rem}
-.foot ul{display:flex;flex-wrap:wrap;gap:1.7rem;list-style:none}
+footer{background:var(--bg);padding:3.2rem 0 2.4rem}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2.4rem}
+.foot h4{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-text);margin-bottom:.9rem}
+.foot ul{list-style:none;display:grid;gap:.5rem;color:var(--muted);font-size:.94rem}
 .foot a:hover{color:var(--ink)}
+.foot-brand p{color:var(--muted);font-size:.92rem;margin-top:.9rem;max-width:24rem}
+.foot-brand .lema{font-weight:700;color:var(--ink);margin-top:.9rem;font-size:.95rem}
+.legal{
+  margin-top:2.4rem;padding-top:1.3rem;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:.7rem 2rem;justify-content:space-between;
+  color:#9A948A;font-size:.82rem;
+}
 
-/* ---------- FAB ---------- */
+/* ---------- barra fixa mobile + FAB desktop ---------- */
+.barra{
+  display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;
+  background:rgba(255,255,255,.96);backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);padding:.65rem .9rem calc(.65rem + env(safe-area-inset-bottom));
+  gap:.7rem;
+}
+.barra .btn{flex:1;padding:.85rem 1rem;font-size:.93rem}
 .fab{
-  position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;
+  position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;
   background:#25D366;display:grid;place-items:center;color:#fff;
-  box-shadow:0 16px 34px -10px rgba(37,211,102,.65);
+  box-shadow:0 14px 30px -10px rgba(37,211,102,.6);
   transition:transform .18s ease;
 }
 .fab:hover{transform:scale(1.06)}
 
 /* ---------- reveals ---------- */
-.js .rv{opacity:0;transform:translateY(16px);transition:opacity .6s cubic-bezier(.2,.6,.2,1),transform .6s cubic-bezier(.2,.6,.2,1)}
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
 .js .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none}}
 
 /* ---------- responsivo ---------- */
-@media (max-width:920px){
+@media (max-width:980px){
+  .topbar .esc{display:none}
   .nav-links{display:none}
+  .hero-grid{grid-template-columns:1fr}
+  .faixa-in{grid-template-columns:1fr;gap:.9rem;padding:1.2rem 0}
+  .serv-grid{grid-template-columns:1fr}
   .sobre-grid{grid-template-columns:1fr}
-  .sobre-photo{margin-top:.6rem}
-  .percurso{grid-template-columns:1fr;gap:2.2rem;max-width:30rem}
-  .percurso::before{left:50%;right:auto;top:8%;bottom:8%;height:auto;width:0;border-top:0;border-left:2px dashed rgba(29,25,21,.22)}
-  .cartao{grid-template-columns:1fr}
-  .flutua.f1{top:10px}
-  .flutua.f2{bottom:10px}
+  .sobre-foto{max-width:440px}
+  .obras-grid{grid-template-columns:1fr 1fr}
+  .passos-grid{grid-template-columns:1fr}
+  .banner-in{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media (max-width:700px){
+  .barra{display:flex}
+  .fab{display:none}
+  footer{padding-bottom:6.4rem}
+  .banner{padding-bottom:5.4rem}
 }
 @media (max-width:560px){
-  .hero h1{font-size:clamp(2.1rem,9.6vw,2.7rem)}
-  .palco-foto img{aspect-ratio:4/4.6}
-  .mascote{right:6px;width:clamp(130px,34vw,170px)}
-  .flutua{padding:.55rem .75rem;border-radius:13px}
-  .flutua b{font-size:.78rem}
-  .flutua .tx span{display:none}
-  .flutua .ic{width:30px;height:30px;border-radius:9px}
-  .btn-gold,.btn-soft{width:100%}
+  .topbar-in{justify-content:center;gap:1rem}
+  .obras-grid{grid-template-columns:1fr 1fr}
+  .sobre-checks{grid-template-columns:1fr}
+  .hero-ctas .btn{width:100%}
+  .foot{grid-template-columns:1fr}
 }
 @media (max-width:380px){
-  .nav-in{gap:.7rem}
-  .btn-nav{padding:.55rem 1rem;font-size:.82rem}
-  .brand-name{font-size:1.05rem}
+  .nav-in{gap:.8rem}
+  .btn-nav{padding:.6rem .95rem;font-size:.85rem}
+  .brand-name{font-size:1.04rem}
 }
 </style>
 </head>
 <body>
 <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<!-- ======================= TOPBAR ======================= -->
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <span class="esc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 21s-7-5.3-7-11a7 7 0 0 1 14 0c0 5.7-7 11-7 11z"/></svg><span data-config="cidade">Sua Cidade</span> e arredores</span>
+    <span class="esc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Seg–Sáb, horário comercial</span>
+    <span class="sep"></span>
+    <a data-config="phone" data-config-href="tel" href="tel:+351000000000"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>+351 000 000 000</a>
+  </div>
+</div>
 
 <!-- ======================= NAV ======================= -->
 <header class="nav">
@@ -378,13 +338,14 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:2.8rem 0 6.
     </a>
     <nav class="nav-links" aria-label="Navegação principal">
       <a href="#servicos">Serviços</a>
-      <a href="#projetos">Obras</a>
       <a href="#sobre">Equipa</a>
+      <a href="#obras">Obras</a>
+      <a href="#faq">Dúvidas</a>
       <a href="#contato">Contactos</a>
     </nav>
     <a class="btn btn-nav" data-wa="nav" href="https://wa.me/351000000000">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.1 1.2z"/></svg>
-      Orçamento
+      Pedir orçamento
     </a>
   </div>
 </header>
@@ -393,214 +354,170 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:2.8rem 0 6.
 
 <!-- ======================= HERO ======================= -->
 <section class="hero" aria-labelledby="t-hero">
-  <div class="wrap">
-    <span class="pill"><span class="dot" aria-hidden="true"></span>Eletricista profissional em <span data-config="cidade">Sua Cidade</span></span>
-    <h1 id="t-hero">Segurança em cada <span class="marca">detalhe</span> da sua obra</h1>
-    <p class="hero-sub">Instalações elétricas <strong>residenciais, comerciais e prediais</strong> com equipa própria e ferramenta profissional. Orçamento claro antes de começar.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-gold" data-wa="hero" href="https://wa.me/351000000000">
-        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.1 1.2z"/></svg>
-        Pedir orçamento grátis
-      </a>
-      <a class="linkona" href="#servicos">Ver os serviços ↓</a>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Eletricista profissional · <span data-config="cidade">Sua Cidade</span></span>
+      <h1 id="t-hero">Instalações elétricas com <em>segurança em cada detalhe</em></h1>
+      <p class="hero-sub">Obras <strong>residenciais, comerciais e prediais</strong> executadas por equipa própria, com ferramenta profissional e orçamento fechado antes de começar.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" data-wa="hero" href="https://wa.me/351000000000">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.1 1.2z"/></svg>
+          Pedir orçamento no WhatsApp
+        </a>
+        <a class="btn btn-line" data-config-href="tel" href="tel:+351000000000">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+          Ligar agora
+        </a>
+      </div>
+      <p class="hero-nota">Orçamento gratuito e sem compromisso · Resposta no próprio dia útil</p>
+      <ul class="hero-checks">
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Equipa própria, uniformizada e com EPI</li>
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Valor fechado antes de começar, sem surpresas</li>
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Obra entregue testada, identificada e limpa</li>
+      </ul>
     </div>
-    <div class="palco">
-      <div class="palco-foto">
-        <img src="../assets/obras/obra-4.jpg" width="900" height="1600" fetchpriority="high"
+    <div class="hero-foto">
+      <div class="moldura">
+        <img class="obra" src="../assets/obras/obra-4.jpg" width="900" height="1600" fetchpriority="high"
              alt="Eletricista da Uiles a passar cabos pela estrutura do teto técnico em obra comercial">
       </div>
+      <p class="legenda"><small>Obra real</small>Equipa Uiles · espaço comercial</p>
       <img class="mascote" src="../assets/mascote.png" width="800" height="980"
            alt="Mascote da Uiles: eletricista cartoon de boné vermelho a apontar para si"
            onerror="this.remove()">
-      <div class="flutua f1">
-        <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
-        <span class="tx"><b>Resposta no próprio dia</b><span>Seg–Sáb, horário comercial</span></span>
+    </div>
+  </div>
+
+  <div class="faixa">
+    <div class="wrap faixa-in">
+      <div class="fitem">
+        <span class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+        <span><b>Resposta no próprio dia</b><span>Seg–Sáb, em horário comercial</span></span>
       </div>
-      <div class="flutua f2">
-        <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
-        <span class="tx"><b>Obra entregue testada</b><span>Identificada, organizada e limpa</span></span>
+      <div class="fitem">
+        <span class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12h6M9 16h4M7 3h10l4 4v14H3V7z"/></svg></span>
+        <span><b>Orçamento fechado</b><span>Valor e prazo combinados por escrito</span></span>
+      </div>
+      <div class="fitem">
+        <span class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
+        <span><b>Norma e segurança</b><span>Instalação testada circuito a circuito</span></span>
       </div>
     </div>
-    <p class="palco-cap">Equipa Uiles em obra comercial — fotos reais, sem banco de imagens.</p>
   </div>
 </section>
 
 <!-- ======================= SERVIÇOS ======================= -->
-<section id="servicos" class="serv" aria-labelledby="t-serv">
+<section id="servicos" aria-labelledby="t-serv">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="pill gold">O que fazemos</span>
-      <h2 id="t-serv">Serviços com orçamento claro, sem surpresas</h2>
-      <p>Toque num serviço e o WhatsApp abre com a mensagem pronta.</p>
+      <span class="eyebrow">Serviços</span>
+      <h2 id="t-serv">Da infraestrutura predial à manutenção da sua casa</h2>
+      <p>Toque num serviço e o WhatsApp abre com a mensagem pronta. Orçamento claro antes de qualquer trabalho.</p>
     </div>
-    <div class="board rv">
-      <p class="bgrupo"><span>Empresarial &amp; Predial</span></p>
-      <a class="srow" data-wa="e1" href="https://wa.me/351000000000">
-        <span class="srow-n" aria-hidden="true">01</span>
-        <span class="srow-t"><strong>Infraestruturas em obra</strong><span>Condutas, calhas técnicas e caminhos de cabos ao ritmo do cronograma da obra.</span></span>
-        <span class="go" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Orçamento</span></span>
+    <div class="serv-grid">
+      <a class="scard rv" data-wa="e1" href="https://wa.me/351000000000">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21V8l9-5 9 5v13"/><path d="M3 13h18M9 21v-4h6v4"/></svg></span>
+        <span><h3>Infraestruturas em obra</h3><p>Condutas, calhas técnicas e caminhos de cabos ao ritmo do cronograma da obra.</p><span class="go">Pedir orçamento →</span></span>
       </a>
-      <a class="srow" data-wa="e2" href="https://wa.me/351000000000">
-        <span class="srow-n" aria-hidden="true">02</span>
-        <span class="srow-t"><strong>Cablagem e distribuição</strong><span>Passagem de cabos identificada e organizada, fácil de manter e ampliar.</span></span>
-        <span class="go" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Orçamento</span></span>
+      <a class="scard rv" data-wa="e2" href="https://wa.me/351000000000">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6c6 0 6 12 12 12h4M4 18c6 0 6-12 12-12h4"/></svg></span>
+        <span><h3>Cablagem e distribuição</h3><p>Passagem de cabos identificada e organizada, fácil de manter e ampliar.</p><span class="go">Pedir orçamento →</span></span>
       </a>
-      <a class="srow" data-wa="e3" href="https://wa.me/351000000000">
-        <span class="srow-n" aria-hidden="true">03</span>
-        <span class="srow-t"><strong>Quadros e contagem</strong><span>Montagem e adequação de quadros com proteção dimensionada por circuito.</span></span>
-        <span class="go" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Orçamento</span></span>
+      <a class="scard rv" data-wa="e3" href="https://wa.me/351000000000">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h3M8 11h3M8 15h3M15 7v8"/><circle cx="15" cy="17.5" r="1.4"/></svg></span>
+        <span><h3>Quadros elétricos</h3><p>Montagem e adequação de quadros com proteção dimensionada por circuito.</p><span class="go">Pedir orçamento →</span></span>
       </a>
-      <a class="srow" data-wa="e4" href="https://wa.me/351000000000">
-        <span class="srow-n" aria-hidden="true">04</span>
-        <span class="srow-t"><strong>Iluminação técnica</strong><span>Projetos de iluminação para lojas, escritórios e áreas comuns.</span></span>
-        <span class="go" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Orçamento</span></span>
+      <a class="scard rv" data-wa="e4" href="https://wa.me/351000000000">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 1 3.6 10.8c-.6.5-.6 1.2-.6 2.2h-6c0-1-.1-1.7-.6-2.2A6 6 0 0 1 12 3z"/></svg></span>
+        <span><h3>Iluminação técnica</h3><p>Projetos de iluminação para lojas, escritórios e áreas comuns.</p><span class="go">Pedir orçamento →</span></span>
       </a>
-      <p class="bgrupo"><span>Residencial</span></p>
-      <a class="srow" data-wa="r1" href="https://wa.me/351000000000">
-        <span class="srow-n" aria-hidden="true">05</span>
-        <span class="srow-t"><strong>Instalação completa</strong><span>Obra nova ou remodelação: cablagem, pontos e acabamento dentro da norma.</span></span>
-        <span class="go" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Orçamento</span></span>
+      <a class="scard rv" data-wa="r1" href="https://wa.me/351000000000">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/></svg></span>
+        <span><h3>Instalação completa</h3><p>Obra nova ou remodelação: cablagem, pontos e acabamento dentro da norma.</p><span class="go">Pedir orçamento →</span></span>
       </a>
-      <a class="srow" data-wa="r2" href="https://wa.me/351000000000">
-        <span class="srow-n" aria-hidden="true">06</span>
-        <span class="srow-t"><strong>Manutenção e reparações</strong><span>Diagnóstico de curto-circuitos, quebras de energia e pontos com mau contacto.</span></span>
-        <span class="go" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Orçamento</span></span>
+      <a class="scard rv" data-wa="r2" href="https://wa.me/351000000000">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4L15 12l-3-3z"/></svg></span>
+        <span><h3>Manutenção e reparações</h3><p>Diagnóstico de curto-circuitos, quebras de energia e pontos com mau contacto.</p><span class="go">Pedir orçamento →</span></span>
       </a>
-      <a class="srow" data-wa="r3" href="https://wa.me/351000000000">
-        <span class="srow-n" aria-hidden="true">07</span>
-        <span class="srow-t"><strong>Tomadas e pontos novos</strong><span>Novos pontos de energia, USB e iluminação onde a casa precisa.</span></span>
-        <span class="go" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Orçamento</span></span>
+      <a class="scard rv" data-wa="r3" href="https://wa.me/351000000000">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2"/><circle cx="12" cy="10" r="2.2"/><path d="M9.5 16h5"/></svg></span>
+        <span><h3>Tomadas e pontos novos</h3><p>Novos pontos de energia, USB e iluminação onde a casa precisa.</p><span class="go">Pedir orçamento →</span></span>
       </a>
-      <a class="srow" data-wa="r4" href="https://wa.me/351000000000">
-        <span class="srow-n" aria-hidden="true">08</span>
-        <span class="srow-t"><strong>Adequação e segurança</strong><span>Revisão da instalação, ligação à terra e proteção contra sobrecargas.</span></span>
-        <span class="go" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Orçamento</span></span>
+      <a class="scard rv" data-wa="r4" href="https://wa.me/351000000000">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
+        <span><h3>Adequação e segurança</h3><p>Revisão da instalação, ligação à terra e proteção contra sobrecargas.</p><span class="go">Pedir orçamento →</span></span>
       </a>
-      <p class="board-foot">Não encontrou o serviço? <a class="linkona" data-wa="contato" href="https://wa.me/351000000000">Pergunte no WhatsApp</a> — se for de eletricidade, nós tratamos.</p>
+    </div>
+    <p class="serv-nota rv">Não encontrou o que procura? <a class="tlink" data-wa="contato" href="https://wa.me/351000000000">Pergunte no WhatsApp</a> — se for de eletricidade, nós tratamos.</p>
+  </div>
+</section>
+
+<!-- ======================= SOBRE ======================= -->
+<section id="sobre" class="sobre" aria-labelledby="t-sobre">
+  <div class="wrap sobre-grid">
+    <figure class="sobre-foto rv">
+      <img loading="lazy" src="../assets/obras/obra-2.jpg" width="900" height="1600" alt="Eletricista da Uiles a conferir o projeto elétrico impresso durante a obra" onerror="this.parentElement.style.display='none'">
+    </figure>
+    <div class="rv">
+      <span class="eyebrow">Quem executa</span>
+      <h2 id="t-sobre">Liderança presente na obra, do início à entrega</h2>
+      <p><strong>A Uiles Instalações Elétricas é liderada por Brendo Uiles</strong>, eletricista que acompanha cada obra pessoalmente — do levantamento técnico à energização final.</p>
+      <p>Trabalhamos em moradias e apartamentos, espaços comerciais e obras prediais, com o compromisso de entregar a instalação testada, identificada e organizada.</p>
+      <!-- TODO:client confirmar habilitações (ex.: DGEG) e anos de experiência para adicionar aqui -->
+      <ul class="sobre-checks">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Acompanhamento direto do responsável</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Ferramenta profissional</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Material certificado</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Comunicação clara até ao fim</li>
+      </ul>
+      <a class="btn btn-gold" data-wa="sobre" href="https://wa.me/351000000000">Falar com a equipa</a>
     </div>
   </div>
 </section>
 
 <!-- ======================= OBRAS ======================= -->
-<section id="projetos" class="obras" aria-labelledby="t-proj">
-  <div class="wrap">
-    <div class="sec-head rv" style="margin-bottom:2rem">
-      <span class="pill"><span class="dot" aria-hidden="true"></span>Obra de verdade</span>
-      <h2 id="t-proj">Qualidade que se vê no <span class="marca">acabamento</span></h2>
-      <p>Registos reais do nosso trabalho. Acompanhe o dia a dia no Instagram.</p>
-    </div>
-  </div>
-  <div class="fila rv" tabindex="0" aria-label="Galeria de fotos das obras — deslize na horizontal">
-    <figure class="foto">
-      <img loading="lazy" src="../assets/obras/obra-4.jpg" width="900" height="1600" alt="Eletricista a passar cabos pela estrutura metálica do teto técnico em obra comercial" onerror="this.parentElement.classList.add('ph');this.nextElementSibling?.remove();this.remove()">
-      <figcaption><small>Obra comercial</small>Passagem de cabos em teto técnico</figcaption>
-    </figure>
-    <figure class="foto">
-      <img loading="lazy" src="../assets/obras/obra-1.jpg" width="900" height="1600" alt="Visão geral da infraestrutura elétrica com condutas instaladas no teto da obra" onerror="this.parentElement.classList.add('ph');this.nextElementSibling?.remove();this.remove()">
-      <figcaption><small>Infraestrutura</small>Condutas e perfilados alinhados</figcaption>
-    </figure>
-    <figure class="foto">
-      <img loading="lazy" src="../assets/obras/obra-6.jpg" width="900" height="1600" alt="Equipa da Uiles a trabalhar em conjunto na instalação elétrica da obra" onerror="this.parentElement.classList.add('ph');this.nextElementSibling?.remove();this.remove()">
-      <figcaption><small>Equipa</small>Execução em equipa na obra</figcaption>
-    </figure>
-    <figure class="foto">
-      <img loading="lazy" src="../assets/obras/obra-3.jpg" width="900" height="1600" alt="Eletricista no topo da escada a instalar a estrutura do teto falso" onerror="this.parentElement.classList.add('ph');this.nextElementSibling?.remove();this.remove()">
-      <figcaption><small>Montagem</small>Estrutura do teto falso</figcaption>
-    </figure>
-    <figure class="foto">
-      <img loading="lazy" src="../assets/obras/obra-7.jpg" width="900" height="1600" alt="Eletricista a finalizar a passagem de cabos na estrutura do teto técnico" onerror="this.parentElement.classList.add('ph');this.nextElementSibling?.remove();this.remove()">
-      <figcaption><small>Acabamento</small>Detalhe no teto técnico</figcaption>
-    </figure>
-  </div>
-  <p class="desliza" aria-hidden="true">← deslize para ver mais →</p>
-  <div class="wrap obras-foot rv">
-    <a class="btn btn-gold" data-wa="projetos" href="https://wa.me/351000000000">Quero um orçamento assim</a>
-    <a class="linkona" data-config-href="instagram" href="https://www.instagram.com/uiles.instalacoes.oficial/" target="_blank" rel="noopener">Ver mais no Instagram →</a>
-  </div>
-  <!-- TODO:client — faixa de credenciais (ativar quando os dados forem confirmados):
-  <div class="wrap"><div class="bento" style="margin-top:3rem">
-    <div class="gitem"><h3>+__ anos</h3><p>de experiência em instalações elétricas</p></div>
-    <div class="gitem"><h3>+__ obras</h3><p>residenciais e comerciais entregues</p></div>
-    <div class="gitem"><h3>DGEG</h3><p>técnico responsável habilitado</p></div>
-  </div></div>
-  -->
-</section>
-
-<!-- ======================= GARANTIAS ======================= -->
-<section class="gar" aria-labelledby="t-gar" style="padding-top:0">
+<section id="obras" aria-labelledby="t-obras">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="pill gold">Garantias</span>
-      <h2 id="t-gar">O padrão que entregamos em toda a obra</h2>
+      <span class="eyebrow">Obras recentes</span>
+      <h2 id="t-obras">Qualidade que se vê no acabamento</h2>
+      <p>Fotos reais do nosso trabalho, sem banco de imagens. Acompanhe o dia a dia no Instagram.</p>
     </div>
-    <div class="bento">
-      <div class="gitem escuro rv">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
-        <h3>Segurança</h3>
-        <p>Norma seguida à risca, EPI e teste em todos os circuitos antes da entrega.</p>
-      </div>
-      <div class="gitem rv">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></span>
-        <h3>Qualidade</h3>
-        <p>Material certificado e acabamento conferido ponto a ponto.</p>
-      </div>
-      <div class="gitem rv">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 1 3.6 10.8c-.6.5-.6 1.2-.6 2.2h-6c0-1-.1-1.7-.6-2.2A6 6 0 0 1 12 3z"/></svg></span>
-        <h3>Soluções</h3>
-        <p>Diagnóstico objetivo e a solução certa para cada situação.</p>
-      </div>
-      <div class="gitem rv">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4L15 12l-3-3z"/></svg></span>
-        <h3>Confiança</h3>
-        <p>Prazo combinado é prazo cumprido, com comunicação clara.</p>
-      </div>
+    <div class="obras-grid">
+      <figure class="obra rv"><span class="img"><img loading="lazy" src="../assets/obras/obra-4.jpg" width="900" height="1600" alt="Eletricista a passar cabos pela estrutura metálica do teto técnico em obra comercial" onerror="this.closest('.obra').classList.add('ph');this.remove()"></span><figcaption>Passagem de cabos em teto técnico</figcaption></figure>
+      <figure class="obra rv"><span class="img"><img loading="lazy" src="../assets/obras/obra-1.jpg" width="900" height="1600" alt="Visão geral da infraestrutura elétrica com condutas instaladas no teto da obra" onerror="this.closest('.obra').classList.add('ph');this.remove()"></span><figcaption>Condutas e perfilados alinhados</figcaption></figure>
+      <figure class="obra rv"><span class="img"><img loading="lazy" src="../assets/obras/obra-6.jpg" width="900" height="1600" alt="Equipa da Uiles a trabalhar em conjunto na instalação elétrica da obra" onerror="this.closest('.obra').classList.add('ph');this.remove()"></span><figcaption>Execução em equipa na obra</figcaption></figure>
+      <figure class="obra rv"><span class="img"><img loading="lazy" src="../assets/obras/obra-3.jpg" width="900" height="1600" alt="Eletricista no topo da escada a instalar a estrutura do teto falso" onerror="this.closest('.obra').classList.add('ph');this.remove()"></span><figcaption>Montagem da estrutura do teto falso</figcaption></figure>
+      <figure class="obra rv"><span class="img"><img loading="lazy" src="../assets/obras/obra-7.jpg" width="900" height="1600" alt="Eletricista a finalizar a passagem de cabos na estrutura do teto técnico" onerror="this.closest('.obra').classList.add('ph');this.remove()"></span><figcaption>Acabamento no teto técnico</figcaption></figure>
+      <figure class="obra rv"><span class="img"><img loading="lazy" src="../assets/obras/obra-5.jpg" width="900" height="1600" alt="Dois eletricistas da equipa a trabalhar em conjunto na instalação" onerror="this.closest('.obra').classList.add('ph');this.remove()"></span><figcaption>Equipa em ação na obra</figcaption></figure>
+    </div>
+    <div class="obras-foot rv">
+      <a class="btn btn-gold" data-wa="projetos" href="https://wa.me/351000000000">Quero um orçamento assim</a>
+      <a class="tlink" data-config-href="instagram" href="https://www.instagram.com/uiles.instalacoes.oficial/" target="_blank" rel="noopener">Ver mais no Instagram →</a>
     </div>
   </div>
 </section>
 
-<!-- ======================= SOBRE / EQUIPA ======================= -->
-<section id="sobre" class="sobre" aria-labelledby="t-sobre" style="padding-top:0">
-  <div class="wrap sobre-grid">
-    <div class="sobre-copy rv">
-      <span class="pill"><span class="dot" aria-hidden="true"></span>Quem executa</span>
-      <h2 id="t-sobre">Liderança presente na obra, do início à entrega</h2>
-      <p class="cita">«Cada obra é acompanhada pessoalmente — do levantamento técnico à energização final.»</p>
-      <p><strong>A Uiles Instalações Elétricas é liderada por Brendo Uiles</strong>, eletricista que está na obra com a equipa, não apenas no orçamento.</p>
-      <p>Trabalhamos em moradias e apartamentos, espaços comerciais e obras prediais, com o compromisso de entregar a instalação testada, identificada e organizada.</p>
-      <!-- TODO:client confirmar habilitações (ex.: DGEG) e anos de experiência para adicionar aqui -->
-      <ul class="selos">
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Acompanhamento direto</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Ferramenta profissional</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Foco, disciplina e propósito</li>
-      </ul>
-    </div>
-    <figure class="sobre-photo rv">
-      <img loading="lazy" src="../assets/obras/obra-2.jpg" width="900" height="1600" alt="Eletricista da Uiles a conferir o projeto elétrico impresso durante a obra" onerror="this.parentElement.style.display='none'">
-      <figcaption>Conferência do projeto, em obra</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- ======================= PERCURSO ======================= -->
+<!-- ======================= PROCESSO ======================= -->
 <section class="passos" aria-labelledby="t-passos">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="pill gold">Como funciona</span>
+      <span class="eyebrow">Como funciona</span>
       <h2 id="t-passos">Do contacto à entrega em três passos</h2>
     </div>
-    <div class="percurso rv">
-      <div class="no">
-        <span class="no-n" aria-hidden="true">1</span>
+    <div class="passos-grid">
+      <div class="passo rv">
+        <span class="passo-n" aria-hidden="true">1</span>
         <h3>Contacto</h3>
         <p>Descreva o serviço ou envie fotos pelo WhatsApp. Atendemos em horário comercial.</p>
       </div>
-      <div class="no">
-        <span class="no-n" aria-hidden="true">2</span>
+      <div class="passo rv">
+        <span class="passo-n" aria-hidden="true">2</span>
         <h3>Orçamento</h3>
         <p>Valor fechado e prazo combinados antes de começar. Sem surpresas no final.</p>
       </div>
-      <div class="no">
-        <span class="no-n" aria-hidden="true">3</span>
+      <div class="passo rv">
+        <span class="passo-n" aria-hidden="true">3</span>
         <h3>Entrega</h3>
         <p>Serviço executado, testado e entregue organizado, com a obra limpa.</p>
       </div>
@@ -608,41 +525,50 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:2.8rem 0 6.
   </div>
 </section>
 
-<!-- ======================= CONTACTOS ======================= -->
-<section id="contato" class="contato" aria-labelledby="t-cont" style="padding-top:0">
+<!-- ======================= FAQ ======================= -->
+<section id="faq" aria-labelledby="t-faq">
   <div class="wrap">
-    <div class="sec-head rv">
-      <span class="pill"><span class="dot" aria-hidden="true"></span>Contactos</span>
-      <h2 id="t-cont">Vamos pôr a sua obra em dia?</h2>
-      <p>Descreva o serviço ou envie fotos: respondemos com um orçamento claro.</p>
+    <div class="sec-head rv" style="text-align:center;margin-inline:auto">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2 id="t-faq">Perguntas que nos fazem todos os dias</h2>
     </div>
-    <div class="cartao rv">
-      <div>
-        <h3>Uiles Instalações Elétricas</h3>
-        <p class="sub">Eletricista profissional · <span data-config="cidade">Sua Cidade</span> e arredores</p>
-        <ul>
-          <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></span><a data-config="phone" data-config-href="tel" href="tel:+351000000000">+351 000 000 000</a></li>
-          <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg></span><a data-config-href="instagram" href="https://www.instagram.com/uiles.instalacoes.oficial/" target="_blank" rel="noopener">@uiles.instalacoes.oficial</a></li>
-          <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>Seg–Sáb, horário comercial</li>
-        </ul>
-      </div>
-      <div class="cartao-acao">
-        <svg class="logo-big" viewBox="0 0 64 64" aria-hidden="true">
-          <circle cx="32" cy="32" r="29" fill="#0B0B0D" stroke="#F2A91E" stroke-width="3.4"/>
-          <circle cx="32" cy="32" r="23.4" fill="none" stroke="#F2A91E" stroke-width="1.2" opacity=".5"/>
-          <rect x="26" y="10" width="3.4" height="9" rx="1.6" fill="#cfcdc8"/>
-          <rect x="34.6" y="10" width="3.4" height="9" rx="1.6" fill="#cfcdc8"/>
-          <path d="M22 19h20v7c0 4-2.4 6.6-5.6 7.6L34 35h-4l-2.4-1.4C24.4 32.6 22 30 22 26z" fill="#F2A91E"/>
-          <path d="M35 35 L26 47 L31.4 47 L28.6 56 L38.6 43.6 L33.2 43.6 Z" fill="#F2A91E"/>
-        </svg>
-        <a class="btn btn-gold" data-wa="contato" href="https://wa.me/351000000000">
-          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.1 1.2z"/></svg>
-          Falar no WhatsApp
-        </a>
-        <small>Resposta no próprio dia útil · Orçamento sem compromisso</small>
-      </div>
+    <div class="faq rv">
+      <details>
+        <summary>O orçamento tem algum custo?</summary>
+        <p>Não. O orçamento é gratuito e sem compromisso: basta descrever o serviço ou enviar fotos pelo WhatsApp e respondemos com valor e prazo.</p>
+      </details>
+      <details>
+        <summary>Trabalham com obras já em andamento?</summary>
+        <p>Sim. Entramos em obras em curso e coordenamos a infraestrutura elétrica com o construtor ou com os restantes trabalhos, ao ritmo do cronograma.</p>
+      </details>
+      <details>
+        <summary>Que zonas atendem?</summary>
+        <p>Atendemos <span data-config="cidade">Sua Cidade</span> e arredores. Se estiver perto, fale connosco — confirmamos a deslocação no próprio contacto.</p>
+      </details>
+      <details>
+        <summary>Como sei que a instalação fica segura?</summary>
+        <p>Trabalhamos dentro da norma, com material certificado, e testamos todos os circuitos antes da entrega. A instalação fica identificada e organizada no quadro.</p>
+      </details>
     </div>
-    <p class="c-note rv">Prefere ligar? <a data-config="phone" data-config-href="tel" href="tel:+351000000000">+351 000 000 000</a> · <a data-wa="nota" href="https://wa.me/351000000000">ou fale no WhatsApp</a></p>
+  </div>
+</section>
+
+<!-- ======================= BANNER FINAL ======================= -->
+<section id="contato" class="banner" aria-labelledby="t-cta">
+  <div class="wrap banner-in">
+    <div class="rv">
+      <span class="eyebrow" style="color:var(--gold)">Contactos</span>
+      <h2 id="t-cta">Vamos pôr a sua obra em dia?</h2>
+      <p>Descreva o serviço ou envie fotos: respondemos com um orçamento claro, no próprio dia útil.</p>
+    </div>
+    <div class="banner-acao rv">
+      <a class="btn btn-gold" data-wa="contato" href="https://wa.me/351000000000">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.1 1.2z"/></svg>
+        Pedir orçamento no WhatsApp
+      </a>
+      <a class="btn btn-line" data-config-href="tel" href="tel:+351000000000">Ligar: <span data-config="phone">+351 000 000 000</span></a>
+      <small>Seg–Sáb, horário comercial · <span data-config="cidade">Sua Cidade</span> e arredores</small>
+    </div>
   </div>
 </section>
 
@@ -651,26 +577,56 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:2.8rem 0 6.
 <!-- ======================= FOOTER ======================= -->
 <footer>
   <div class="wrap foot">
-    <a class="brand" href="#" aria-label="Uiles Instalações Elétricas">
-      <svg viewBox="0 0 64 64" aria-hidden="true" width="36" height="36">
-        <circle cx="32" cy="32" r="29" fill="#0B0B0D" stroke="#F2A91E" stroke-width="3.4"/>
-        <rect x="26" y="10" width="3.4" height="9" rx="1.6" fill="#cfcdc8"/>
-        <rect x="34.6" y="10" width="3.4" height="9" rx="1.6" fill="#cfcdc8"/>
-        <path d="M22 19h20v7c0 4-2.4 6.6-5.6 7.6L34 35h-4l-2.4-1.4C24.4 32.6 22 30 22 26z" fill="#F2A91E"/>
-        <path d="M35 35 L26 47 L31.4 47 L28.6 56 L38.6 43.6 L33.2 43.6 Z" fill="#F2A91E"/>
-      </svg>
-      <span class="brand-name" style="font-size:1.05rem">Uiles</span>
-    </a>
-    <span class="lema">Foco, disciplina e propósito.</span>
-    <ul>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#projetos">Obras</a></li>
-      <li><a data-wa="footer" href="https://wa.me/351000000000">WhatsApp</a></li>
-      <li><a href="https://www.instagram.com/uiles.instalacoes.oficial/" target="_blank" rel="noopener">Instagram</a></li>
-    </ul>
+    <div class="foot-brand">
+      <a class="brand" href="#" aria-label="Uiles Instalações Elétricas">
+        <svg viewBox="0 0 64 64" aria-hidden="true" width="44" height="44">
+          <circle cx="32" cy="32" r="29" fill="#0B0B0D" stroke="#F2A91E" stroke-width="3.4"/>
+          <rect x="26" y="10" width="3.4" height="9" rx="1.6" fill="#cfcdc8"/>
+          <rect x="34.6" y="10" width="3.4" height="9" rx="1.6" fill="#cfcdc8"/>
+          <path d="M22 19h20v7c0 4-2.4 6.6-5.6 7.6L34 35h-4l-2.4-1.4C24.4 32.6 22 30 22 26z" fill="#F2A91E"/>
+          <path d="M35 35 L26 47 L31.4 47 L28.6 56 L38.6 43.6 L33.2 43.6 Z" fill="#F2A91E"/>
+        </svg>
+        <span class="brand-name">Uiles<small>Instalações Elétricas</small></span>
+      </a>
+      <p>Instalações e manutenções elétricas residenciais, comerciais e prediais, com segurança em cada detalhe.</p>
+      <p class="lema">Foco, disciplina e propósito.</p>
+    </div>
+    <div>
+      <h4>Contactos</h4>
+      <ul>
+        <li><a data-wa="footer" href="https://wa.me/351000000000">WhatsApp: <span data-config="phone">+351 000 000 000</span></a></li>
+        <li><a href="https://www.instagram.com/uiles.instalacoes.oficial/" target="_blank" rel="noopener">@uiles.instalacoes.oficial</a></li>
+        <li><span data-config="cidade">Sua Cidade</span> e arredores</li>
+        <li>Seg–Sáb, horário comercial</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Serviços</h4>
+      <ul>
+        <li><a href="#servicos">Instalação completa</a></li>
+        <li><a href="#servicos">Quadros elétricos</a></li>
+        <li><a href="#servicos">Manutenção e reparações</a></li>
+        <li><a href="#servicos">Infraestruturas em obra</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap legal">
     <span>© <span id="ano">2026</span> Uiles Instalações Elétricas · NIF <span data-config="nif">000 000 000</span></span>
+    <span>Feito com ⚡ e disciplina</span>
   </div>
 </footer>
+
+<!-- barra fixa (mobile) -->
+<div class="barra" role="region" aria-label="Contactar rapidamente">
+  <a class="btn btn-gold" data-wa="barra" href="https://wa.me/351000000000">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.1 1.2z"/></svg>
+    WhatsApp
+  </a>
+  <a class="btn btn-line" data-config-href="tel" href="tel:+351000000000">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+    Ligar
+  </a>
+</div>
 
 <a class="fab" data-wa="fab" href="https://wa.me/351000000000" aria-label="Conversar no WhatsApp">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.1 1.2z"/></svg>
@@ -692,10 +648,11 @@ const MSG = {
   nav    : "Olá! Vi o site da Uiles e gostava de pedir um orçamento.",
   hero   : "Olá! Vi o site da Uiles e gostava de pedir um orçamento.",
   contato: "Olá! Gostava de um orçamento para um serviço elétrico.",
-  nota   : "Olá! Vi o site da Uiles.",
+  sobre  : "Olá! Gostava de falar com a equipa da Uiles sobre um serviço.",
   projetos: "Olá! Vi as obras no site da Uiles e gostava de um orçamento para a minha obra.",
   footer : "Olá! Vi o site da Uiles.",
   fab    : "Olá! Vi o site da Uiles e gostava de pedir um orçamento.",
+  barra  : "Olá! Vi o site da Uiles e gostava de pedir um orçamento.",
   e1     : "Olá! Gostava de um orçamento de infraestruturas elétricas para obra.",
   e2     : "Olá! Gostava de um orçamento de cablagem e distribuição.",
   e3     : "Olá! Gostava de um orçamento para quadros elétricos.",
